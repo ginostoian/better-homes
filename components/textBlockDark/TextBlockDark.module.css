@@ -1,0 +1,29 @@
+.textBlock__main {
+    position: relative;
+    background-color: var(--text-primary);
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.textBlock__header {
+    padding-inline: 20px;
+    margin-bottom: 40px;
+}
+
+.textBlock__header-title {
+    font-size: 38px;
+    line-height: 40px;
+    margin-top: 20px;
+    /* max-width: 50%; */
+}
+
+.textBlock__header-subtitle {
+    font-size: 18px;
+    margin-bottom: 3rem;
+    line-height: 1.7rem;
+    text-align: center;
+    /* max-width: 50%; */
+}

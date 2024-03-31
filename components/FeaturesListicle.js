@@ -17,7 +17,10 @@ const features = [
             "DNS setup to avoid spam folder (DKIM, DMARC, SPF in subdomain)",
             "Webhook to receive & forward emails",
           ].map((item) => (
-            <li key={item} className="flex items-center gap-3">
+            <li
+              key={item}
+              className="flex items-center gap-3"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -78,7 +81,10 @@ const features = [
             "Handle webhooks to update user's account",
             "Tips to setup your account & reduce chargebacks",
           ].map((item) => (
-            <li key={item} className="flex items-center gap-3">
+            <li
+              key={item}
+              className="flex items-center gap-3"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -141,7 +147,10 @@ const features = [
             "Save user data in MongoDB",
             "Private/protected pages & API calls",
           ].map((item) => (
-            <li key={item} className="flex items-center gap-3">
+            <li
+              key={item}
+              className="flex items-center gap-3"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -200,7 +209,10 @@ const features = [
         <ul className="space-y-2">
           {["Mongoose schema", "Mongoose plugins to make your life easier"].map(
             (item) => (
-              <li key={item} className="flex items-center gap-3">
+              <li
+                key={item}
+                className="flex items-center gap-3"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
@@ -265,7 +277,10 @@ const features = [
             "Structured data markup for Rich Snippets",
             "SEO-optimized UI components",
           ].map((item) => (
-            <li key={item} className="flex items-center gap-3">
+            <li
+              key={item}
+              className="flex items-center gap-3"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -327,7 +342,10 @@ const features = [
             "20+ themes with daisyUI",
             "Automatic dark mode",
           ].map((item) => (
-            <li key={item} className="flex items-center gap-3">
+            <li
+              key={item}
+              className="flex items-center gap-3"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
@@ -430,17 +448,21 @@ const FeaturesListicle = () => {
   }, [featureSelected, hasClicked]);
 
   return (
-    <section className="py-24" id="features">
-      <div className="max-w-3xl mx-auto">
-        <div className="bg-base-100 max-md:px-8 max-w-3xl">
+    <section
+      container
+      className="container box-shadow py-12 my-10 rounded-2xl bg-white"
+      id="features"
+    >
+      <div className="text-center w-full mx-auto">
+        <div className="max-md:px-8 mx-4">
           <p className="text-accent font-medium text-sm font-mono mb-3">
-            const launch_time = &quot;Today&quot;;
+            Start date = &quot;Today&quot;;
           </p>
-          <h2 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-8">
+          <h2 className="text-base-content/90 font-extrabold text-3xl lg:text-5xl tracking-tight mb-8">
             {/* 💡 COPY TIP: Remind visitors about the value of your product. Why do they need it? */}
-            Supercharge your app instantly, launch faster, make $
+            Stop killing yourself! Get your project on track now.
           </h2>
-          <div className="text-base-content/80 leading-relaxed mb-8 lg:text-lg">
+          <div className="text-base-content/90 leading-relaxed mb-8 lg:text-lg lg:pl-20 lg:pr-20">
             {/* 💡 COPY TIP: Explain how your product delivers what you promise in the headline. */}
             Login users, process payments and send emails at lightspeed. Spend
             your time building your startup, not integrating APIs. ShipFast
@@ -450,7 +472,7 @@ const FeaturesListicle = () => {
       </div>
 
       <div>
-        <div className="grid grid-cols-4 md:flex justify-start gap-4 md:gap-12 max-md:px-8 max-w-3xl mx-auto mb-8">
+        <div className="grid grid-cols-4 md:flex justify-center gap-4 md:gap-12 max-md:px-8 text-center w-full mx-auto mb-8">
           {features.map((feature) => (
             <span
               key={feature.name}
@@ -464,7 +486,7 @@ const FeaturesListicle = () => {
                 className={`duration-100 ${
                   featureSelected === feature.name
                     ? "text-primary"
-                    : "text-base-content/30 group-hover:text-base-content/50"
+                    : "text-base-content/50 group-hover:text-base-content/80"
                 }`}
               >
                 {feature.svg}
@@ -473,7 +495,7 @@ const FeaturesListicle = () => {
                 className={`font-semibold text-sm ${
                   featureSelected === feature.name
                     ? "text-primary"
-                    : "text-base-content/50"
+                    : "text-base-content/60"
                 }`}
               >
                 {feature.name}
@@ -481,10 +503,10 @@ const FeaturesListicle = () => {
             </span>
           ))}
         </div>
-        <div className="bg-base-200">
-          <div className="max-w-3xl mx-auto flex flex-col md:flex-row justify-center md:justify-start md:items-center gap-12">
+        <div className="">
+          <div className="text-center w-full mx-auto flex flex-col md:flex-row justify-center md:items-center gap-12">
             <div
-              className="text-base-content/80 leading-relaxed space-y-4 px-12 md:px-0 py-12 max-w-xl animate-opacity"
+              className="text-base-content/90 leading-relaxed space-y-4 px-12 md:px-0 py-12 max-w-xl animate-opacity"
               key={featureSelected}
             >
               <h3 className="font-semibold text-base-content text-lg">
@@ -497,7 +519,10 @@ const FeaturesListicle = () => {
         </div>
       </div>
       {/* Just used to know it's the end of the autoscroll feature (optional, see useEffect) */}
-      <p className="opacity-0" ref={featuresEndRef}></p>
+      <p
+        className="opacity-0"
+        ref={featuresEndRef}
+      ></p>
     </section>
   );
 };

@@ -26,11 +26,14 @@ const avatars = [
 
 const TestimonialsAvatars = ({ priority = false }) => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-3">
+    <div className="flex flex-col md:flex-row justify-start items-center md:items-start gap-3">
       {/* AVATARS */}
       <div className={`-space-x-5 avatar-group justy-start`}>
         {avatars.map((image, i) => (
-          <div className="avatar w-12 h-12" key={i}>
+          <div
+            className="avatar w-12 h-12"
+            key={i}
+          >
             <Image
               src={image.src}
               alt={image.alt}
@@ -63,8 +66,8 @@ const TestimonialsAvatars = ({ priority = false }) => {
         </div>
 
         <div className="text-base text-base-content/80">
-          <span className="font-semibold text-base-content">32</span> makers
-          ship faster
+          <span className="font-semibold text-base-content">460+</span> over the
+          moon clients
         </div>
       </div>
     </div>
