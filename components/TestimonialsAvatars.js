@@ -26,7 +26,7 @@ const avatars = [
 
 const TestimonialsAvatars = ({ priority = false }) => {
   return (
-    <div className="flex flex-col md:flex-row justify-start items-center md:items-start gap-3">
+    <div className="flex flex-col md:flex-row justify-start items-center md:items-start gap-3 mb-4">
       {/* AVATARS */}
       <div className={`-space-x-5 avatar-group justy-start`}>
         {avatars.map((image, i) => (
