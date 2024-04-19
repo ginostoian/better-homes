@@ -142,7 +142,7 @@ a:hover {
   background-color: var(--clr-accent);
   color: #fff;
   font-weight: 700;
-  padding: 12px 30px;
+  padding: 9px 30px;
   border-radius: 6px;
   box-shadow: var(--box-shadow-2);
   font-size: var(--fs-p-default-sm);
