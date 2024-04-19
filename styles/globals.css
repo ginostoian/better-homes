@@ -61,6 +61,7 @@
 
 html {
   scroll-behavior: smooth;
+  border-color: #100b47 !important;
 }
 
 body {
@@ -151,7 +152,7 @@ a:hover {
   display: inline-block;
   text-transform: capitalize;
   transition: background-color 400ms ease;
-  border-color: var(--clr-accent);
+  border-color: #7421fc;
 }
 
 .btn:hover {

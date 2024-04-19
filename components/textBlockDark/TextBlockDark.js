@@ -15,7 +15,7 @@ const TextBlockDark = ({ content }) => {
         </p>
         <Link
           href="/pages/contact"
-          className="service__btn btn"
+          className="service__btn btn border-none"
         >
           {content.darkBgTextBtn}
         </Link>

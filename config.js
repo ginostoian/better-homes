@@ -1,4 +1,5 @@
 import themes from "daisyui/src/theming/themes.js";
+import Link from "next/link";
 
 const config = {
   // REQUIRED
@@ -198,33 +199,66 @@ const config = {
       faqs: [
         {
           question: "Who is Better Homes Studio?",
-          answer:
-            "We are a construction and interior renovation and design company. We have been working in London for over 10 years and have established experience in the field.",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              We are a full service renovation company based in London. We do
+              everything from interior design to building extensions and
+              converting lofts. We bet there is nothing you can throw at us that
+              we can&apos;t do.
+            </div>
+          ),
         },
         {
-          question: "Do you offer free quotes?",
-          answer:
-            "Yes, all our quotes are free and do not carry any obligations on your part.",
+          question: "Are your quotes free?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Yes, our quotes are 100% free, detailed and transparent.
+            </div>
+          ),
         },
         {
-          question: "Is your work guaranteed?",
-          answer:
-            "Yes, our work is covered by our workmanship guarantee. Please navigate to 'Our guarantee' section to read more about each type of guarantee we offer.",
+          question: "Do you offer a work guarantee?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Yes. The BH Studio workmanship guarantee covers our work from 1
+              year to 10 years depending on the project. You can read more about{" "}
+              <Link href="/pages/our-guarantee">our guarantee here.</Link>
+            </div>
+          ),
         },
         {
-          question: "Do you just do the build phase?",
-          answer:
-            "Yes, if you provide us with the design, our team will take care of translating your ideas into reality",
+          question: "Can I use BHS just for the build phase?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Yes, if you provide us with the design, our team will take care of
+              translating your ideas into reality
+            </div>
+          ),
         },
         {
           question: "How long will my project take?",
-          answer:
-            "It depends on the size of the project. A bathroom renovation usually takes between 10 and 14 working days. A full flat or home renovation can take from 3 weeks to 1 and a half months and up depending on complexity.",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              It depends on the size of your project. A bathroom renovation
+              usually takes between 10 and 14 working days. A full flat or home
+              renovation can take from 3 weeks to 1 and a half months and up
+              depending on complexity. For a more specific answer, reach out to
+              us.
+            </div>
+          ),
         },
         {
           question: "Do you offer refferal rewards?",
           answer:
-            "Yes, we run the BHS Scheme. This allows you to win £150 per every client we end up working with, reffered by you.",
+            "Yes, we run the BHS Scheme. This allows you to win a reward for every client you refer that we end up working with. For more information, please reach out.",
+        },
+        {
+          question: "I have another question",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Great, give us a call or fill our form.
+            </div>
+          ),
         },
       ],
       blogHighlights: [

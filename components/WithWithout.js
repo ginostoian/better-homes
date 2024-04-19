@@ -6,7 +6,7 @@ const WithWithout = () => {
     <section className="container">
       <div className="max-w-5xl mx-auto px-8 py-16 md:py-32 ">
         <h2 className="text-center text-[#100b47] font-extrabold text-3xl md:text-5xl tracking-tight mb-12 md:mb-20">
-          Tired of managing Stripe invoices?
+          Worried your project will go off-trail?
         </h2>
 
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-12">

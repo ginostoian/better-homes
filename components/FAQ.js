@@ -5,27 +5,27 @@ import { useRef, useState } from "react";
 // <FAQ> component is a lsit of <Item> component
 // Just import the FAQ & add your FAQ content to the const faqList
 
-const faqList = [
-  {
-    question: "What do I get exactly?",
-    answer: <div className="space-y-2 leading-relaxed">Loreum Ipseum</div>,
-  },
-  {
-    question: "Can I get a refund?",
-    answer: (
-      <p>
-        Yes! You can request a refund within 7 days of your purchase. Reach out
-        by email.
-      </p>
-    ),
-  },
-  {
-    question: "I have another question",
-    answer: (
-      <div className="space-y-2 leading-relaxed">Cool, contact us by email</div>
-    ),
-  },
-];
+// {
+//     question: "What do I get exactly?",
+//     answer: <div className="space-y-2 leading-relaxed">Loreum Ipseum</div>,
+//   },
+//   {
+//     question: "Can I get a refund?",
+//     answer: (
+//       <p>
+//         Yes! You can request a refund within 7 days of your purchase. Reach out
+//         by email.
+//       </p>
+//     ),
+//   },
+//   {
+//     question: "I have another question",
+//     answer: (
+//       <div className="space-y-2 leading-relaxed">Cool, contact us by email</div>
+//     ),
+//   },
+
+let faqList = [];
 
 const Item = ({ item }) => {
   const accordion = useRef(null);
@@ -87,7 +87,8 @@ const Item = ({ item }) => {
   );
 };
 
-const FAQ = () => {
+const FAQ = ({ content }) => {
+  faqList = content;
   return (
     <section
       className="bg-base-200 container"

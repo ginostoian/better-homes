@@ -3,6 +3,7 @@ import FeaturesListicle from "@/components/FeaturesListicle";
 import Problem from "@/components/Problem";
 import Testimonials11 from "@/components/Testimonials11";
 import WithWithout from "@/components/WithWithout";
+import BlogHighlight from "@/components/blog/BlogHighlight";
 import ContentRow from "@/components/contentRow/ContentRow";
 import Hero from "@/components/hero/Hero";
 import SectionTitle from "@/components/sectionTitle/SectionTitle";
@@ -24,6 +25,8 @@ export default function Page() {
   ];
   const howWeDoItCopy = config.copy.homepage.howWeDoItSection;
   const reviewsCtaCopy = config.copy.homepage.reviewsSection;
+  const faqCopy = config.copy.homepage.faqs;
+  const blogHighlightCopy = config.copy.homepage.blogHighlights;
 
   return (
     <>
@@ -66,7 +69,8 @@ export default function Page() {
         <TextGrid content={howWeDoItCopy} />
         <Testimonials11 />
         <TextBlockDark content={reviewsCtaCopy} />
-        <FAQ />
+        <FAQ content={faqCopy} />
+        <BlogHighlight articles={blogHighlightCopy} />
       </main>
     </>
   );
