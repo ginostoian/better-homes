@@ -333,12 +333,15 @@ const VideoTestimonial = ({ i }) => {
 
 const Testimonials11 = () => {
   return (
-    <section className="bg-base-200" id="testimonials">
+    <section
+      className="bg-base-200"
+      id="testimonials"
+    >
       <div className="py-24 px-8 max-w-7xl mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <div className="mb-8">
-            <h2 className="sm:text-5xl text-4xl font-extrabold text-base-content">
-              212 makers are already shipping faster!
+            <h2 className="sm:text-5xl text-4xl font-extrabold text-[#100b47]">
+              Hundreds of clients are thrilled about their new homes!
             </h2>
           </div>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-base-content/80">
@@ -352,9 +355,15 @@ const Testimonials11 = () => {
           className="grid max-w-2xl grid-cols-1 gap-6 mx-auto sm:gap-8 md:grid-cols-2 lg:max-w-none lg:grid-cols-4"
         >
           <li>
-            <ul role="list" className="flex flex-col gap-y-6 sm:gap-y-8">
+            <ul
+              role="list"
+              className="flex flex-col gap-y-6 sm:gap-y-8"
+            >
               {[...Array(3)].map((e, i) => (
-                <Testimonial key={i} i={i} />
+                <Testimonial
+                  key={i}
+                  i={i}
+                />
               ))}
             </ul>
           </li>
@@ -401,21 +410,39 @@ const Testimonials11 = () => {
                 </figure>
               </li>
             </ul>
-            <ul role="list" className="flex flex-col gap-y-6 sm:gap-y-8">
+            <ul
+              role="list"
+              className="flex flex-col gap-y-6 sm:gap-y-8"
+            >
               {[...Array(2)].map((e, i) => (
-                <Testimonial key={i} i={i + 3} />
+                <Testimonial
+                  key={i}
+                  i={i + 3}
+                />
               ))}
             </ul>
-            <ul role="list" className="flex flex-col gap-y-6 sm:gap-y-8">
+            <ul
+              role="list"
+              className="flex flex-col gap-y-6 sm:gap-y-8"
+            >
               {[...Array(2)].map((e, i) => (
-                <Testimonial key={i} i={i + 5} />
+                <Testimonial
+                  key={i}
+                  i={i + 5}
+                />
               ))}
             </ul>
           </li>
           <li>
-            <ul role="list" className="flex flex-col gap-y-6 sm:gap-y-8">
+            <ul
+              role="list"
+              className="flex flex-col gap-y-6 sm:gap-y-8"
+            >
               {[...Array(3)].map((e, i) => (
-                <Testimonial key={i} i={i + 7} />
+                <Testimonial
+                  key={i}
+                  i={i + 7}
+                />
               ))}
             </ul>
           </li>

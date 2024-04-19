@@ -151,6 +151,7 @@ a:hover {
   display: inline-block;
   text-transform: capitalize;
   transition: background-color 400ms ease;
+  border-color: var(--clr-accent);
 }
 
 .btn:hover {

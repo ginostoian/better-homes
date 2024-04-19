@@ -189,7 +189,8 @@ const config = {
           "Now it's time to sit back, relax and marvel at how your vision became a reality. It really is that simple, so what are you waiting for?",
       },
       reviewsSection: {
-        darkBgTextTitle: "Take a look at what some of our clients say.",
+        darkBgTextTitle:
+          "You are our top priority. Your satisfaction is our goal.",
         darkBgTextSubtitle:
           "We've built our business on the back of our clients satisfaction. If you are happy, we are happy. To read even more reviews, scroll to the bottom where you'll find links to different platforms with verified reviews.",
         darkBgTextBtn: "Let's discuss",
