@@ -348,7 +348,7 @@ const FeaturesListicle = () => {
       </div>
 
       <div>
-        <div className="grid grid-cols-4 md:flex justify-center gap-4 md:gap-12 max-md:px-8 text-center w-full mx-auto mb-8">
+        <div className="grid grid-cols-4 md:flex justify-center gap-16 md:gap-12 max-md:px-8 text-center w-full mx-auto mb-8">
           {features.map((feature) => (
             <span
               key={feature.name}
@@ -380,7 +380,7 @@ const FeaturesListicle = () => {
           ))}
         </div>
         <div className="">
-          <div className="text-center w-full mx-auto flex flex-col md:flex-row justify-center md:items-center gap-12">
+          <div className=" w-full mx-auto flex flex-col md:flex-row justify-center md:items-center gap-12">
             <div
               className="text-base-content/90 leading-relaxed space-y-4 px-12 md:px-0 py-12 max-w-xl animate-opacity"
               key={featureSelected}
