@@ -12,16 +12,16 @@ const refTypes = {
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 26.245 26.256"
-        className="w-[18px] h-[18px]"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-6 h-6"
       >
         <path
-          d="M26.254 13.128c0 7.253-5.875 13.128-13.128 13.128S-.003 20.382-.003 13.128 5.872 0 13.125 0s13.128 5.875 13.128 13.128"
-          fill="#da552f"
-        />
-        <path
-          d="M14.876 13.128h-3.72V9.2h3.72c1.083 0 1.97.886 1.97 1.97s-.886 1.97-1.97 1.97m0-6.564H8.53v13.128h2.626v-3.938h3.72c2.538 0 4.595-2.057 4.595-4.595s-2.057-4.595-4.595-4.595"
-          fill="#fff"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
         />
       </svg>
     ),
@@ -31,7 +31,7 @@ const refTypes = {
     ariaLabel: "See user post on Twitter",
     svg: (
       <svg
-        className="w-5 h-5 fill-[#00aCee]"
+        className="w-3 h-3 fill-[#00aCee]"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
       >
@@ -64,42 +64,42 @@ const list = [
     // videoSrc: "/jack.mp4"
   },
   {
-    username: "the_mcnaveen",
-    name: "Naveen",
-    text: "Setting up everything from the ground up is a really hard, and time consuming process. What you pay for will save your time for sure.",
-    type: refTypes.twitter,
-    link: "https://twitter.com/the_mcnaveen",
-  },
-  {
-    username: "wahab",
-    name: "Wahab Shaikh",
-    text: "Easily saves 15+ hrs for me setting up trivial stuff. Now, I can directly focus on shipping features rather than hours of setting up the same technologies from scratch. Feels like a super power! :D",
+    name: "Melina",
+    text: `I couldn’t be happier with my kitchen and bathroom renovation.
+The better homes studio managed to bring my vision to life, I still can’t believe it is the same house...`,
     type: refTypes.productHunt,
-    link: "https://www.producthunt.com/products/shipfast-2/reviews?review=667971",
+    link: "https://www.houzz.co.uk/viewReview/2008037/better-homes-studio-review",
   },
   {
-    name: "Sean",
-    text: "Just purchased and cloned and *holy shit!* I realllyyy like what I'm seeing here!",
-    type: refTypes.other,
-  },
-  {
-    username: "krishna",
-    name: "Krishna Kant",
-    text: "Finally a good boilerplate for Nextjs, now I dont have to cry about it comparing with laravel ecosystem.",
+    name: "Shyra Muthusamy",
+    text: "The quality of workmanship is extremely high and they have managed to translate loose ideas out together on PowerPoint by me into reality.",
     type: refTypes.productHunt,
-    link: "https://www.producthunt.com/posts/shipfast-2?comment=2707061",
+    link: "https://www.houzz.co.uk/viewReview/1863607/better-homes-studio-review",
   },
   {
-    username: "imgyf",
-    name: "Yifan Goh",
-    text: "It's a game changer  🚀 Comes with easy to follow tutorial, and saves you a ton of time. What's not to love?",
-    type: refTypes.twitter,
-    link: "https://twitter.com/imgyf/status/1697549891080532236?s=20",
+    name: "Donovan",
+    text: "The entirety of the work was executed to the utmost standard of excellence. Celli oversees a team comprising highly skilled craftsmen...",
+    type: refTypes.productHunt,
+    link: "https://www.houzz.co.uk/viewReview/2018228/better-homes-studio-review",
   },
   {
-    name: "Yazdun",
-    text: "Yo Marc, I got the boilerplate, it's fantastic man you just save me 10 hours on each project",
-    type: refTypes.other,
+    username: "perrine_l",
+    name: "Perrine LeGoanvic",
+    text: "I came across Better Homes Studio through Houzz as I needed to fully renovate my first flat and I could honestly not recommend them enough.",
+    type: refTypes.productHunt,
+    link: "https://www.houzz.co.uk/viewReview/1829290/better-homes-studio-review",
+  },
+  {
+    name: "Lawrance and Kate",
+    text: "We worked with Gino to make our dream bathroom into a reality. This was our first renovation project in our first home, so we were quite nervous about the process, but Gino and his team made it really smooth.",
+    type: refTypes.productHunt,
+    link: "https://www.houzz.co.uk/viewReview/1789847/better-homes-studio-review",
+  },
+  {
+    name: "Phil",
+    text: "My house, which is more than a century old, was magnificently restored by Better Homes Studio. They did an exceptional job,",
+    type: refTypes.productHunt,
+    link: "https://www.houzz.co.uk/viewReview/2006566/better-homes-studio-review",
   },
   {
     name: "Marc Lou",
@@ -112,25 +112,26 @@ const list = [
     type: refTypes.video,
   },
   {
-    username: "zawwadx",
-    name: "Zawwad Ul Sami",
-    text: "It's an amazing minimalist, lightweight boilerplate with well-organized code. It has almost all the core features you would want in a SaaS boilerplate. As a new team last year it actually took us months to build a similar set of features at a stable level.",
-    type: refTypes.twitter,
+    name: "HU-36197023",
+    username: "HU-36197023",
+    text: "We have now worked with Celli, Gino and the team twice, once for a major renovation and once for some minor but important work, and both times we have been absolutely delighted with the service that they have provided.",
+    type: refTypes.productHunt,
+    link: "https://www.houzz.co.uk/viewReview/2008039/better-homes-studio-review",
   },
   {
-    username: "dan",
-    name: "Dan Mindru",
-    text: "Probably one of the most powerful things you can 'npm install' that I've seen",
+    name: "Knutt",
+    text: "The team holds themselves to high standards, and we couldn't be happier with the top-notch quality of the end result.",
     type: refTypes.productHunt,
-    link: "https://www.producthunt.com/posts/shipfast-2?comment=2706763",
+    link: "https://www.houzz.co.uk/viewReview/2024469/better-homes-studio-review",
   },
   // The last testimonial is featured on big devices (span 2 columns + big font) 👇
   {
-    username: "VicPivots",
-    name: "Victor Abeledo",
-    text: "Marc, I got your boilerplate and having the payments setup with Stripe + user auth is a blessing. This will save me like a week of work for each new side project I spin up. I appreciate that is well documented, as well. 100% worth it 🚀🚀🚀",
-    type: refTypes.twitter,
-    link: "https://twitter.com/VicPivots/status/1697352442986250413?s=20",
+    name: "George G",
+    text: `After checking out loads of loft conversion companies in North East London, we finally decided to go with Better Homes Studio for our hip to gable loft conversion.
+Just a couple of months after our first chat with Gino, we've got an amazing loft conversion, all done and dusted in just 9 weeks, just like they promised from the get-go.
+`,
+    type: refTypes.productHunt,
+    link: "https://www.houzz.co.uk/viewReview/2013769/better-homes-studio-review",
   },
 ];
 
