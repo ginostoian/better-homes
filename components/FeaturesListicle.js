@@ -8,14 +8,17 @@ import { useState, useEffect, useRef } from "react";
 // - svg: icon of the feature
 const features = [
   {
-    name: "Emails",
+    name: "Client experience",
     description: (
       <>
-        <ul className="space-y-1">
+        <ul className="space-y-2">
           {[
-            "Send transactional emails",
-            "DNS setup to avoid spam folder (DKIM, DMARC, SPF in subdomain)",
-            "Webhook to receive & forward emails",
+            "Excellent communication",
+            "Upfront pricing",
+            "Honest timelines",
+            "Willingness to address client concerns",
+            "Minimizing disruption to clients' lives, when possible",
+            "Excellent workmanship guarantees - up to 10 years",
           ].map((item) => (
             <li
               key={item}
@@ -37,20 +40,115 @@ const features = [
               {item}
             </li>
           ))}
-          <li className="flex items-center gap-3 text-accent font-medium">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="w-[18px] h-[18px] inline shrink-0"
+        </ul>
+      </>
+    ),
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-8 h-8"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z"
+        />
+      </svg>
+    ),
+  },
+  {
+    name: "Project management",
+    description: (
+      <>
+        <ul className="space-y-2">
+          {[
+            "Dedicated project manager",
+            "Full office staff",
+            "Automated sitemap generation to fasten Google indexing",
+            "Project Management Tools",
+            "Professional help and advice when needed",
+            "In-house interior designers",
+          ].map((item) => (
+            <li
+              key={item}
+              className="flex items-center gap-3"
             >
-              <path
-                fillRule="evenodd"
-                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                clipRule="evenodd"
-              />
-            </svg>
-            Time saved: 2 hours
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                  clipRule="evenodd"
+                />
+              </svg>
+
+              {item}
+            </li>
+          ))}
+        </ul>
+      </>
+    ),
+    svg: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="w-8 h-8"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+        />
+      </svg>
+    ),
+  },
+  {
+    name: "Services",
+    description: (
+      <>
+        <ul className="space-y-1 flex flex-wrap gap-5 justify-center">
+          {[
+            "Interior design",
+            "Bathroom renovation",
+            "Kitchen renovation",
+            "Home renovation",
+            "House extension",
+            "Loft conversion",
+          ].map((item) => (
+            <li
+              key={item}
+              className="flex items-center gap-1 max-w-[40%]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                  clipRule="evenodd"
+                />
+              </svg>
+
+              {item}
+            </li>
+          ))}
+          <li className="flex items-center gap-3 text-accent font-medium">
+            Being a full service renovation company, we will save you the time
+            and hassle of managing multiple contractors on one project.
           </li>
         </ul>
       </>
@@ -66,7 +164,8 @@ const features = [
       >
         <path
           strokeLinecap="round"
-          d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25"
+          strokeLinejoin="round"
+          d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"
         />
       </svg>
     ),
@@ -77,9 +176,10 @@ const features = [
       <>
         <ul className="space-y-2">
           {[
-            "Create checkout sessions",
-            "Handle webhooks to update user's account",
-            "Tips to setup your account & reduce chargebacks",
+            "We never request upfront payments",
+            "Small deposit required to book availability",
+            "Manageable weekly payments",
+            "Last payment always paid after snagging",
           ].map((item) => (
             <li
               key={item}
@@ -101,21 +201,6 @@ const features = [
               {item}
             </li>
           ))}
-          <li className="flex items-center gap-3 text-accent font-medium">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="w-[18px] h-[18px] inline shrink-0"
-            >
-              <path
-                fillRule="evenodd"
-                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                clipRule="evenodd"
-              />
-            </svg>
-            Time saved: 2 hours
-          </li>
         </ul>
       </>
     ),
@@ -137,15 +222,15 @@ const features = [
     ),
   },
   {
-    name: "Login",
+    name: "Quotes",
     description: (
       <>
         <ul className="space-y-2">
           {[
-            "Magic links setup",
-            "Login with Google walkthrough",
-            "Save user data in MongoDB",
-            "Private/protected pages & API calls",
+            "Quotes are always free",
+            "Quotes are always detailed",
+            "If it is not in there, we won't do it",
+            "If it is in there, it will always get done",
           ].map((item) => (
             <li
               key={item}
@@ -167,21 +252,6 @@ const features = [
               {item}
             </li>
           ))}
-          <li className="flex items-center gap-3 text-accent font-medium">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="w-[18px] h-[18px] inline shrink-0"
-            >
-              <path
-                fillRule="evenodd"
-                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                clipRule="evenodd"
-              />
-            </svg>
-            Time saved: 3 hours
-          </li>
         </ul>
       </>
     ),
@@ -197,202 +267,7 @@ const features = [
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
-          d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: "Database",
-    description: (
-      <>
-        <ul className="space-y-2">
-          {["Mongoose schema", "Mongoose plugins to make your life easier"].map(
-            (item) => (
-              <li
-                key={item}
-                className="flex items-center gap-3"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-[18px] h-[18px] inline shrink-0 opacity-80"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-
-                {item}
-              </li>
-            )
-          )}
-          <li className="flex items-center gap-3 text-accent font-medium">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="w-[18px] h-[18px] inline shrink-0"
-            >
-              <path
-                fillRule="evenodd"
-                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                clipRule="evenodd"
-              />
-            </svg>
-            Time saved: 2 hours
-          </li>
-        </ul>
-      </>
-    ),
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-8 h-8"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: "SEO",
-    description: (
-      <>
-        <ul className="space-y-2">
-          {[
-            "All meta tags to rank on Google",
-            "OpenGraph tags to share on social media",
-            "Automated sitemap generation to fasten Google indexing",
-            "Structured data markup for Rich Snippets",
-            "SEO-optimized UI components",
-          ].map((item) => (
-            <li
-              key={item}
-              className="flex items-center gap-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clipRule="evenodd"
-                />
-              </svg>
-
-              {item}
-            </li>
-          ))}
-          <li className="flex items-center gap-3 text-accent font-medium">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="w-[18px] h-[18px] inline shrink-0"
-            >
-              <path
-                fillRule="evenodd"
-                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                clipRule="evenodd"
-              />
-            </svg>
-            Time saved: 6 hours
-          </li>
-        </ul>
-      </>
-    ),
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-8 h-8"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9zm3.75 11.625a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"
-        />
-      </svg>
-    ),
-  },
-  {
-    name: "Style",
-    description: (
-      <>
-        <ul className="space-y-2">
-          {[
-            "Components, animations & sections (like the pricing page below)",
-            "20+ themes with daisyUI",
-            "Automatic dark mode",
-          ].map((item) => (
-            <li
-              key={item}
-              className="flex items-center gap-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                className="w-[18px] h-[18px] inline shrink-0 opacity-80"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                  clipRule="evenodd"
-                />
-              </svg>
-
-              {item}
-            </li>
-          ))}
-          <li className="flex items-center gap-3 text-accent font-medium">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              className="w-[18px] h-[18px] inline shrink-0"
-            >
-              <path
-                fillRule="evenodd"
-                d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                clipRule="evenodd"
-              />
-            </svg>
-            Time saved: 5 hours
-          </li>
-        </ul>
-      </>
-    ),
-    svg: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className="w-8 h-8"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"
+          d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184"
         />
       </svg>
     ),
@@ -456,17 +331,18 @@ const FeaturesListicle = () => {
       <div className="text-center w-full mx-auto">
         <div className="max-md:px-8 mx-4">
           <p className="text-accent font-medium text-sm font-mono mb-3">
-            Start date = &quot;Today&quot;;
+            There is a better way
           </p>
-          <h2 className="text-base-content/90 font-extrabold text-3xl lg:text-5xl tracking-tight mb-8">
+          <h2 className="text-base-content/90 font-extrabold text-3xl lg:text-5xl mb-8">
             {/* 💡 COPY TIP: Remind visitors about the value of your product. Why do they need it? */}
-            Stop killing yourself! Get your project on track now.
+            Don&apos;t be a statistic! Get your project on track now.
           </h2>
           <div className="text-base-content/90 leading-relaxed mb-8 lg:text-lg lg:pl-20 lg:pr-20">
             {/* 💡 COPY TIP: Explain how your product delivers what you promise in the headline. */}
-            Login users, process payments and send emails at lightspeed. Spend
-            your time building your startup, not integrating APIs. ShipFast
-            provides you with the boilerplate code you need to launch, FAST.
+            Construction and renovation projects are inherently complex and
+            prone to delays and errors. However, with careful planning and
+            management, you can minimize risks and turn a potentially stressful
+            situation into a rewarding experience.
           </div>
         </div>
       </div>
