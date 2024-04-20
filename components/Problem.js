@@ -43,32 +43,33 @@ const Problem = () => {
   return (
     <section className="container rounded-2xl bg-neutral text-neutral-content">
       <div className="max-w-7xl mx-auto px-8 py-16 md:py-32 text-center">
-        <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
-          80% of renovations go off track and catch you by surprise
+        <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl mb-6 md:mb-8">
+          Over 80% of renovations go off track and catch you off guard.
         </h2>
         <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
-          Poor communication, bad finishes, going over budget and over
-          timeline... literally 100&apos;s of things that can go wrong
+          Unrealistic expectations, poor communication, bad finishes,
+          underestimating costs, timeline delays... literally 100&apos;s of
+          things that can go wrong.
         </p>
 
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6">
           <Step
             emoji="🧑‍💻"
-            text="Hire contractor and start"
+            text="Hire random contractor and start the project"
           />
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
 
           <Step
             emoji="😮‍💨"
-            text="Problems start to appear"
+            text="Problems and hidden costs start to appear"
           />
 
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
 
           <Step
             emoji="😔"
-            text="Overwhelmed by complexity"
+            text="Overwhelmed by complexity -> poor outcome"
           />
         </div>
       </div>
