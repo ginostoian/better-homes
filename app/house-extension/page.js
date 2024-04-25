@@ -70,10 +70,6 @@ export default function Page() {
         <Testimonials11 />
         <TextBlockDark content={reviewsCtaCopy} />
         <FAQ content={faqCopy} />
-        <SectionTitle
-          title="The Knowledge Center"
-          subtitle="Where you actually learn new things"
-        />
         <BlogHighlight articles={blogHighlightCopy} />
       </main>
     </>
