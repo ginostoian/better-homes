@@ -20,7 +20,7 @@
     color: var(--text-primary);
     font-size: calc(var(--fs-h3-sm) - 5px);
     line-height: 3rem;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
     text-align: center;
     font-weight: 900;
     margin-inline: -2.3rem;
