@@ -1,7 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import classes from "./ContentRow.module.css";
-import Link from "next/link";
 
 const ContentRow = ({
   title,

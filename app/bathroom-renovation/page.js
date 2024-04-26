@@ -13,8 +13,8 @@ import TextGrid from "@/components/textGrid/TextGrid";
 import config from "@/config";
 
 export default function Page() {
-  const homepageCopy = config.copy.homepage;
-  const whatWeDoCopy = config.copy.homepage.whatWeDoSection;
+  const bathroomPageCopy = config.copy.bathroomPage;
+  const whatWeDoCopy = bathroomPageCopy.whatWeDoSection;
   const whatWeDoArr = [
     whatWeDoCopy.bathroom,
     whatWeDoCopy.kitchen,
@@ -32,11 +32,12 @@ export default function Page() {
     <>
       <main>
         <Hero
-          title={homepageCopy.title}
-          titleAccent={homepageCopy.titleAccent}
-          subtitle={homepageCopy.subtitle}
-          heroCTA={homepageCopy.heroCTA}
-          heroImgUrl={homepageCopy.heroImgUrl}
+          title={bathroomPageCopy.title}
+          titleAccent={bathroomPageCopy.titleAccent}
+          subtitle={bathroomPageCopy.subtitle}
+          heroCTA={bathroomPageCopy.heroCTA}
+          heroImgUrl={bathroomPageCopy.heroImgUrl}
+          ctaTallyFormLink={bathroomPageCopy.ctaTallyFormLink}
         />
         <SocialProof />
         <Problem />

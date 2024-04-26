@@ -38,7 +38,7 @@ const Hero = ({
           </div>
         </div>
         <Link
-          href={ctaTallyFormLink || "/pages/contact"}
+          href={ctaTallyFormLink || "/contact"}
           className={`${classes["hero__btn"]} btn`}
         >
           {heroCTA}
