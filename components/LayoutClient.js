@@ -8,6 +8,7 @@ import { SessionProvider } from "next-auth/react";
 import NextTopLoader from "nextjs-toploader";
 import { Toaster } from "react-hot-toast";
 import { Tooltip } from "react-tooltip";
+import Script from "next/script";
 import config from "@/config";
 
 // Crisp customer chat support:
@@ -56,7 +57,20 @@ const ClientLayout = ({ children }) => {
     <>
       <SessionProvider>
         {/* Show a progress bar at the top when navigating between pages */}
-        <NextTopLoader color={config.colors.main} showSpinner={false} />
+        <NextTopLoader
+          color={config.colors.main}
+          showSpinner={false}
+        />
+
+        <Script
+          async
+          id="tally-js"
+          src="https://tally.so/widgets/embed.js"
+          onLoad={() => {
+            // eslint-disable-next-line no-undef
+            Tally.loadEmbeds();
+          }}
+        />
 
         {/* Content inside app/page.js files  */}
         {children}
