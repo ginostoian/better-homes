@@ -16,17 +16,17 @@ export default function Page() {
   const bathroomPageCopy = config.copy.bathroomPage;
   const whatWeDoCopy = bathroomPageCopy.whatWeDoSection;
   const whatWeDoArr = [
-    whatWeDoCopy.bathroom,
-    whatWeDoCopy.kitchen,
-    whatWeDoCopy.generalRenovation,
-    whatWeDoCopy.interiorDesign,
-    whatWeDoCopy.houseExtension,
-    whatWeDoCopy.smartHome,
+    whatWeDoCopy.bathroomDesign,
+    whatWeDoCopy.modernBathroom,
+    whatWeDoCopy.industrialBathroom,
+    whatWeDoCopy.traditionalBathroom,
+    whatWeDoCopy.smallBathroom,
+    whatWeDoCopy.victorianBathroom,
   ];
-  const howWeDoItCopy = config.copy.homepage.howWeDoItSection;
+  const howWeDoItCopy = bathroomPageCopy.howWeDoItSection;
   const reviewsCtaCopy = config.copy.homepage.reviewsSection;
-  const faqCopy = config.copy.homepage.faqs;
-  const blogHighlightCopy = config.copy.homepage.blogHighlights;
+  const faqCopy = bathroomPageCopy.faqs;
+  const blogHighlightCopy = bathroomPageCopy.blogHighlights;
 
   return (
     <>
@@ -71,6 +71,10 @@ export default function Page() {
         <Testimonials11 />
         <TextBlockDark content={reviewsCtaCopy} />
         <FAQ content={faqCopy} />
+        <SectionTitle
+          title="The Knowledge Center"
+          subtitle="Where you actually learn new things"
+        />
         <BlogHighlight articles={blogHighlightCopy} />
       </main>
     </>
