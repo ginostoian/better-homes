@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import PlausibleProvider from "next-plausible";
 
 import Header from "@/components/navigation/Navigation";
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
       {config.domainName && (
         <head>
           <PlausibleProvider domain={config.domainName} />
+          <GoogleTagManager gtmId="GTM-KBRRN8ZZ" />
         </head>
       )}
       <body>
