@@ -309,6 +309,595 @@ const config = {
           p2: "Our team will help you make the best decisions whether you are doing a full Design, Supply & Install or just the installation with us.",
           CTA: "Get your bathroom designed",
           imgSrc: "/assets/img/bathroom/bathroom-design.webp",
+          slug: "#tally-open=3x6L5n&tally-emoji-text=👋&tally-emoji-animation=wave",
+        },
+        smallBathroom: {
+          title: "Small bathrooms",
+          subtitle: "Even a small bathroom can make a huge impact",
+          subtitleAccent: " if renovated properly.",
+          p1: "Combining functionality, practicality with clever storage solutions you can manage to get rid of the chaos that usually comes with a tiny bathroom.",
+          p2: "Our team of bathroom refurbishment experts will guide you through the whole process.",
+          CTA: "Let's discuss your project",
+          imgSrc: "/assets/img/bathroom/small-bathroom.webp",
+          slug: "#tally-open=3x6L5n&tally-emoji-text=👋&tally-emoji-animation=wave",
+        },
+        modernBathroom: {
+          title: "Modern bathrooms",
+          subtitle:
+            "Geometrical shapes, simple colour palettes with sleek bold accents",
+          subtitleAccent: " or tones of neutral colours",
+          p1: "Modern bathrooms are predominantly simplistic. Decorative bathroom tiles add a sort of unmatched charm to the entire space that cranks things up a notch.",
+          p2: "If you really wish to put the X-Factor in extra, don’t, for once, shy away from bold colours encircling a statement bathtub or shower.",
+          CTA: "Let's discuss your project",
+          imgSrc: "/assets/img/bathroom/modern-bathroom.webp",
+          slug: "#tally-open=3x6L5n&tally-emoji-text=👋&tally-emoji-animation=wave",
+        },
+        industrialBathroom: {
+          title: "Industrial bathrooms",
+          subtitle:
+            "Exposed pipes, ducts, tubes, and wires are commonly found in",
+          subtitleAccent: " industrial style bathrooms",
+          p1: "When considering an industrial style bathroom renovation you can go either strong or soft.",
+          p2: "Whichever option you decide to go with, you can use metro tiles, grey colors, bare brick walls, exposed shelving and black shower frames.",
+          CTA: "Let's discuss your project",
+          imgSrc: "/assets/img/bathroom/industrial-bathroom.webp",
+          slug: "#tally-open=3x6L5n&tally-emoji-text=👋&tally-emoji-animation=wave",
+        },
+        traditionalBathroom: {
+          title: "Traditional bathrooms",
+          subtitle: "Traditional style bathrooms are",
+          subtitleAccent: " classic and elegant in design.",
+          p1: "Traditional bathroom designs typically take their cue from what is currently trending in the design world, with materials and decor that are respective of their historical periods.",
+          p2: "Keep your accessories clean and simple, you could consider monogramming for your towels and bath mats.",
+          CTA: "Let's discuss your project",
+          imgSrc: "/assets/img/bathroom/bathroom-trad.webp",
+          slug: "#tally-open=3x6L5n&tally-emoji-text=👋&tally-emoji-animation=wave",
+        },
+        victorianBathroom: {
+          title: "Victorian bathrooms",
+          subtitle: "This design style often features a ",
+          subtitleAccent: "freestanding bath as the center piece",
+          p1: "Victorian bathrooms are characterized by the elegant design elements commonly found in the grand homes of the Victorian era.",
+          p2: "In general, the design for Victorian bathrooms focuses on beauty, elegance, and comfort.",
+          CTA: "Let's discuss your project",
+          imgSrc: "/assets/img/bathroom/victorian-bathroom.webp",
+          slug: "#tally-open=3x6L5n&tally-emoji-text=👋&tally-emoji-animation=wave",
+        },
+      },
+      howWeDoItSection: {
+        bigGridTitle: "Trustworthy, reliable, friendly.",
+        bigGridText:
+          "When things get messy, and they do, you'll be happy we're by your side, taking care of all the issues. Design, supply and build. All taken care of.",
+        gridOneNum: "1.",
+        gridOneTitle: "Expertise through experience.",
+        gridOneText:
+          "We have been designing and renovating bathrooms in London for over 12 years. We have encountered all possible scenarios and all types of clients. This means we know how to manage anything that comes our way.",
+        gridTwoNum: "2.",
+        gridTwoTitle: "Detailed, transparent, no fluff quotes.",
+        gridTwoText:
+          "Worried about 'the actual' price of your bathroom renovation? All our estimates and quotes are free, transparent and detailed. What you see is what you get. No more hidden costs that take the cost up by 50% more than initially quoted.",
+        gridThreeNum: "3.",
+        gridThreeTitle: "Your bathroom. Professionaly designed.",
+        gridThreeText:
+          "Skip the tens of hours spent scouring Pinterest and Google for inspiration and for what you need to purchase. Let our proffesional bathroom designers do all the heavy lifting. Relax, approve and visualise your bathroom in 3D from the comfort of your house. Piece of cake.",
+        gridFourNum: "4.",
+        gridFourTitle: "After care and guarantees.",
+        gridFourText:
+          "Our industry leading 2 year workmanship guarantee is designed to offer you peace of mind. On the off chance that something goes wrong, we come out and fix it for free. Simple like that. For item faults, we are more than happy to replace them while under warranty (labour costs may apply)",
+      },
+      reviewsSection: {
+        darkBgTextTitle:
+          "You are our top priority. Your satisfaction is our goal.",
+        darkBgTextSubtitle:
+          "We've built our business on the back of our clients satisfaction. If you are happy, we are happy. To read even more reviews, scroll to the bottom where you'll find links to different platforms with verified reviews.",
+        darkBgTextBtn: "Let's discuss",
+      },
+      faqs: [
+        {
+          question: "Who is Better Homes Studio?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              We are a full service renovation company based in London. We do
+              everything from interior design to building extensions and
+              converting lofts. We bet there is nothing you can throw at us that
+              we can&apos;t do.
+            </div>
+          ),
+        },
+        {
+          question: "Are your quotes free?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Yes, our quotes are 100% free, detailed and transparent.
+            </div>
+          ),
+        },
+        {
+          question: "Do you offer a work guarantee?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Yes. The BH Studio workmanship guarantee covers our work from 1
+              year to 10 years depending on the project. You can read more about{" "}
+              <Link href="/our-guarantee">our guarantee here.</Link>
+            </div>
+          ),
+        },
+        {
+          question: "Can I use BHS just for the build phase?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Yes, if you provide us with the design, our team will take care of
+              translating your ideas into reality
+            </div>
+          ),
+        },
+        {
+          question: "How long will my project take?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              It depends on the size of your project. A bathroom renovation
+              usually takes between 10 and 14 working days. A full flat or home
+              renovation can take from 3 weeks to 1 and a half months and up
+              depending on complexity. For a more specific answer, reach out to
+              us.
+            </div>
+          ),
+        },
+        {
+          question: "Do you offer refferal rewards?",
+          answer:
+            "Yes, we run the BHS Scheme. This allows you to win a reward for every client you refer that we end up working with. For more information, please reach out.",
+        },
+        {
+          question: "I have another question",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Great, give us a call or fill our form.
+            </div>
+          ),
+        },
+      ],
+      blogHighlights: [
+        {
+          title: "We won the Best of Houzz Service Award - 2023",
+          date: "23 February 2023",
+          imgUrl: "/assets/img/misc/best-of-houzz-winner.png",
+          slug: "best-of-houzz-winner-2023",
+        },
+        {
+          title: "Top 5 bathroom design trends in 2023",
+          date: "23 January 2023",
+          imgUrl: "/assets/img/bathroom/bathroom-design-trend-terrazzo.jpeg",
+          slug: "top-5-bathroom-design-trends-in-2023",
+        },
+        {
+          title: "Save money and time with a smart home",
+          date: "05 March 2023",
+          imgUrl: "/assets/img/smarthome/smarthome-1.webp",
+          slug: "smart-home-ideas-2023",
+        },
+        {
+          title: "Small bathroom design & renovation ideas",
+          date: "15 February 2023",
+          imgUrl:
+            "/assets/img/bathroom/vertical-layout-in-small-bathroom-design.jpeg",
+          slug: "small-bathroom-design-ideas",
+        },
+      ],
+    },
+    kitchenPage: {
+      ctaTallyFormLink:
+        "#tally-open=wvPvbg&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave",
+      title: "Your kitchen deserves better ",
+      titleAccent: "Renovate with the best.",
+      subtitle:
+        "Kitchen fitting and renovation done right - On Time, On Budget, 5-Star Guarantee. From 0 to 100 without you having to lift a finger. Renovate smarter and easier - The Better Homes Studio way.",
+      heroCTA: "take the first step - it's free",
+      heroImgUrl: "kitchen/modern-kitchen.webp",
+      servicesSectionTitle: "What we do",
+      servicesSectionSubtitle: "Full service renovation company",
+      whatWeDoSection: {
+        kitchenDesign: {
+          title: "Kitchen design",
+          subtitle: "We create outstanding kitchens.",
+          subtitleAccent: " Custom built, for you!",
+          p1: "Designing your kitchen can be quite the task. There are a lot of big decisions to be made from design and practicality to plumbing and drainage.",
+          p2: "When getting a kitchen from one of the big kitchen vendors is just not enough, our team will help you make the best decisions",
+          CTA: "Get your kitchen designed",
+          imgSrc: "/assets/img/kitchen/kitchen-design.webp",
+          slug: "#tally-open=wvPvbg&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave",
+        },
+        smallKitchen: {
+          title: "Small kitchens",
+          subtitle: "Even a small kitchen can meet your needs",
+          subtitleAccent: " if designed & renovated properly.",
+          p1: "Combining functionality, practicality with clever storage solutions you can manage to get rid of the chaos that usually comes with a tiny kitchen.",
+          p2: "Our team of kitchen refurbishment experts and installers will guide you through the whole process.",
+          CTA: "Let's discuss your project",
+          imgSrc: "/assets/img/kitchen/small-kitchen.webp",
+          slug: "#tally-open=wvPvbg&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave",
+        },
+        modernKitchen: {
+          title: "Modern kitchens",
+          subtitle:
+            "Geometrical shapes, simple colour palettes with sleek bold accents",
+          subtitleAccent: " or tones of neutral colours",
+          p1: "Modern kitchen designs have open floor plans stretching the entire length of the kitchen layout.",
+          p2: "This minimalistic approach to layout is what achieves a simple and elegant look.",
+          CTA: "Let's discuss your project",
+          imgSrc: "/assets/img/kitchen/modern-kitchen.webp",
+          slug: "#tally-open=wvPvbg&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave",
+        },
+        industrialKitchen: {
+          title: "Industrial kitchens",
+          subtitle:
+            "Exposed pipes, ducts, tubes, and wires are commonly found in",
+          subtitleAccent: " industrial style kitchens",
+          p1: "When considering an industrial style kitchen renovation you can go either strong or soft.",
+          p2: "Whichever option you decide to go with, you can use metro tiles, grey colors, bare brick walls, exposed shelving and black shower frames.",
+          CTA: "Let's discuss your project",
+          imgSrc: "/assets/img/kitchen/industrial-kitchen.webp",
+          slug: "#tally-open=wvPvbg&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave",
+        },
+        openPlanKitchen: {
+          title: "Open plan kitchens",
+          subtitle: "Open plan style kitchens are",
+          subtitleAccent: " for the free and bold.",
+          p1: "Open plan kitchens are one of the most sought after features of a modern family home, thanks to their light, spacious feel and versatile design.",
+          p2: "In an open plan kitchen, the design hangs on the interaction between the kitchen, especially the island, and dining or living room. This usually involves knocking down a wall.",
+          CTA: "Let's discuss your project",
+          imgSrc: "/assets/img/kitchen/open-plan-kitchen.webp",
+          slug: "#tally-open=wvPvbg&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave",
+        },
+        kitchenInExtension: {
+          title: "Kitchen in extension",
+          subtitle:
+            "Kitchen extensions don't have to be huge, sprawling design to  ",
+          subtitleAccent: "transform an existing house.",
+          p1: "When designing a kitchen extension, spend time and effort on making sure plenty natural light infiltrates the space.",
+          p2: "Bifold or sliding patio doors are fantastic options that offer views out all year round, while installing a large roof lantern can bring in plenty of natural light to the new space.",
+          CTA: "Let's discuss your project",
+          imgSrc: "/assets/img/kitchen/kitchen-extension.webp",
+          slug: "#tally-open=wvPvbg&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave",
+        },
+      },
+      howWeDoItSection: {
+        bigGridTitle: "Trustworthy, reliable, friendly.",
+        bigGridText:
+          "When things get messy, and they do, you'll be happy we're by your side, taking care of all the issues. Design, supply and build. All taken care of.",
+        gridOneNum: "1.",
+        gridOneTitle: "Expertise through experience.",
+        gridOneText:
+          "We have been designing and renovating kitchens in London for over 12 years. We have encountered all possible scenarios and all types of clients. This means we know how to manage anything that comes our way.",
+        gridTwoNum: "2.",
+        gridTwoTitle: "Detailed, transparent, no fluff quotes.",
+        gridTwoText:
+          "Worried about 'the actual' price of your kitchen fitting and renovation? All our estimates and quotes are free, transparent and detailed. What you see is what you get. No more hidden costs that take the cost up by 50% more than initially quoted.",
+        gridThreeNum: "3.",
+        gridThreeTitle: "Your kitchen. Professionaly designed & fitted.",
+        gridThreeText:
+          "Skip the tens of hours spent scouring Pinterest and Google for inspiration and for what you need to purchase. If the big vendors are not cutting it out for you, let our proffesional designers do all the heavy lifting. Piece of cake.",
+        gridFourNum: "4.",
+        gridFourTitle: "After care and guarantees.",
+        gridFourText:
+          "Our industry leading 2 year workmanship guarantee is designed to offer you peace of mind. On the off chance that something goes wrong, we come out and fix it for free. Simple like that. For item faults, we are more than happy to replace them while under warranty (labour costs may apply)",
+      },
+      reviewsSection: {
+        darkBgTextTitle:
+          "You are our top priority. Your satisfaction is our goal.",
+        darkBgTextSubtitle:
+          "We've built our business on the back of our clients satisfaction. If you are happy, we are happy. To read even more reviews, scroll to the bottom where you'll find links to different platforms with verified reviews.",
+        darkBgTextBtn: "Let's discuss",
+      },
+      faqs: [
+        {
+          question: "Who is Better Homes Studio?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              We are a full service renovation company based in London. We do
+              everything from interior design to building extensions and
+              converting lofts. We bet there is nothing you can throw at us that
+              we can&apos;t do.
+            </div>
+          ),
+        },
+        {
+          question: "Are your quotes free?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Yes, our quotes are 100% free, detailed and transparent.
+            </div>
+          ),
+        },
+        {
+          question: "Do you offer a work guarantee?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Yes. The BH Studio workmanship guarantee covers our work from 1
+              year to 10 years depending on the project. You can read more about{" "}
+              <Link href="/our-guarantee">our guarantee here.</Link>
+            </div>
+          ),
+        },
+        {
+          question: "Can I use BHS just for the build phase?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Yes, if you provide us with the design, our team will take care of
+              translating your ideas into reality
+            </div>
+          ),
+        },
+        {
+          question: "How long will my project take?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              It depends on the size of your project. A bathroom renovation
+              usually takes between 10 and 14 working days. A full flat or home
+              renovation can take from 3 weeks to 1 and a half months and up
+              depending on complexity. For a more specific answer, reach out to
+              us.
+            </div>
+          ),
+        },
+        {
+          question: "Do you offer refferal rewards?",
+          answer:
+            "Yes, we run the BHS Scheme. This allows you to win a reward for every client you refer that we end up working with. For more information, please reach out.",
+        },
+        {
+          question: "I have another question",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Great, give us a call or fill our form.
+            </div>
+          ),
+        },
+      ],
+      blogHighlights: [
+        {
+          title: "We won the Best of Houzz Service Award - 2023",
+          date: "23 February 2023",
+          imgUrl: "/assets/img/misc/best-of-houzz-winner.png",
+          slug: "best-of-houzz-winner-2023",
+        },
+        {
+          title: "Top 5 bathroom design trends in 2023",
+          date: "23 January 2023",
+          imgUrl: "/assets/img/bathroom/bathroom-design-trend-terrazzo.jpeg",
+          slug: "top-5-bathroom-design-trends-in-2023",
+        },
+        {
+          title: "Save money and time with a smart home",
+          date: "05 March 2023",
+          imgUrl: "/assets/img/smarthome/smarthome-1.webp",
+          slug: "smart-home-ideas-2023",
+        },
+        {
+          title: "Small bathroom design & renovation ideas",
+          date: "15 February 2023",
+          imgUrl:
+            "/assets/img/bathroom/vertical-layout-in-small-bathroom-design.jpeg",
+          slug: "small-bathroom-design-ideas",
+        },
+      ],
+    },
+    renovationPage: {
+      ctaTallyFormLink:
+        "#tally-open=3x6L5n&tally-emoji-text=👋&tally-emoji-animation=wave",
+      title: "Bathroom renovation chaos? ",
+      titleAccent: "Experience hassle free",
+      subtitle:
+        "Bathroom design, supply and renovation. From 0 to 100 and you don't have to lift a finger. Be smarter than your peers and choose the easy way - The Better Homes Studio way.",
+      heroCTA: "take the first step - it's free",
+      heroImgUrl: "bathroom/industrial-bathroom.webp",
+      servicesSectionTitle: "What we do",
+      servicesSectionSubtitle: "Full service renovation company",
+      whatWeDoSection: {
+        bathroomDesign: {
+          title: "Bathroom design",
+          subtitle: "We create outstanding bathrooms.",
+          subtitleAccent: " Design, Supply & Install.",
+          p1: "Renovating your bathroom can be quite the task. There are a lot of big decisions to be made from design and practicality to plumbing and drainage.",
+          p2: "Our team will help you make the best decisions whether you are doing a full Design, Supply & Install or just the installation with us.",
+          CTA: "Get your bathroom designed",
+          imgSrc: "/assets/img/bathroom/bathroom-design.webp",
+          slug: "pages/bathroom-renovation",
+        },
+        smallBathroom: {
+          title: "Small bathrooms",
+          subtitle: "Even a small bathroom can make a huge impact",
+          subtitleAccent: " if renovated properly.",
+          p1: "Combining functionality, practicality with clever storage solutions you can manage to get rid of the chaos that usually comes with a tiny bathroom.",
+          p2: "Our team of bathroom refurbishment experts will guide you through the whole process.",
+          CTA: "Let's discuss your project",
+          imgSrc: "/assets/img/bathroom/small-bathroom.webp",
+          slug: "pages/bathroom-renovation",
+        },
+        modernBathroom: {
+          title: "Modern bathrooms",
+          subtitle:
+            "Geometrical shapes, simple colour palettes with sleek bold accents",
+          subtitleAccent: " or tones of neutral colours",
+          p1: "Modern bathrooms are predominantly simplistic. Decorative bathroom tiles add a sort of unmatched charm to the entire space that cranks things up a notch.",
+          p2: "If you really wish to put the X-Factor in extra, don’t, for once, shy away from bold colours encircling a statement bathtub or shower.",
+          CTA: "Let's discuss your project",
+          imgSrc: "/assets/img/bathroom/modern-bathroom.webp",
+          slug: "pages/bathroom-renovation",
+        },
+        industrialBathroom: {
+          title: "Industrial bathrooms",
+          subtitle:
+            "Exposed pipes, ducts, tubes, and wires are commonly found in",
+          subtitleAccent: " industrial style bathrooms",
+          p1: "When considering an industrial style bathroom renovation you can go either strong or soft.",
+          p2: "Whichever option you decide to go with, you can use metro tiles, grey colors, bare brick walls, exposed shelving and black shower frames.",
+          CTA: "Let's discuss your project",
+          imgSrc: "/assets/img/bathroom/industrial-bathroom.webp",
+          slug: "pages/bathroom-renovation",
+        },
+        traditionalBathroom: {
+          title: "Traditional bathrooms",
+          subtitle: "Traditional style bathrooms are",
+          subtitleAccent: " classic and elegant in design.",
+          p1: "Traditional bathroom designs typically take their cue from what is currently trending in the design world, with materials and decor that are respective of their historical periods.",
+          p2: "Keep your accessories clean and simple, you could consider monogramming for your towels and bath mats.",
+          CTA: "Let's discuss your project",
+          imgSrc: "/assets/img/bathroom/bathroom-trad.webp",
+          slug: "pages/bathroom-renovation",
+        },
+        victorianBathroom: {
+          title: "Victorian bathrooms",
+          subtitle: "This design style often features a ",
+          subtitleAccent: "freestanding bath as the center piece",
+          p1: "Victorian bathrooms are characterized by the elegant design elements commonly found in the grand homes of the Victorian era.",
+          p2: "In general, the design for Victorian bathrooms focuses on beauty, elegance, and comfort.",
+          CTA: "Let's discuss your project",
+          imgSrc: "/assets/img/bathroom/victorian-bathroom.webp",
+          slug: "pages/bathroom-renovation",
+        },
+      },
+      howWeDoItSection: {
+        bigGridTitle: "Trustworthy, reliable, friendly.",
+        bigGridText:
+          "When things get messy, and they do, you'll be happy we're by your side, taking care of all the issues. Design, supply and build. All taken care of.",
+        gridOneNum: "1.",
+        gridOneTitle: "Expertise through experience.",
+        gridOneText:
+          "We have been designing and renovating bathrooms in London for over 12 years. We have encountered all possible scenarios and all types of clients. This means we know how to manage anything that comes our way.",
+        gridTwoNum: "2.",
+        gridTwoTitle: "Detailed, transparent, no fluff quotes.",
+        gridTwoText:
+          "Worried about 'the actual' price of your bathroom renovation? All our estimates and quotes are free, transparent and detailed. What you see is what you get. No more hidden costs that take the cost up by 50% more than initially quoted.",
+        gridThreeNum: "3.",
+        gridThreeTitle: "Your bathroom. Professionaly designed.",
+        gridThreeText:
+          "Skip the tens of hours spent scouring Pinterest and Google for inspiration and for what you need to purchase. Let our proffesional bathroom designers do all the heavy lifting. Relax, approve and visualise your bathroom in 3D from the comfort of your house. Piece of cake.",
+        gridFourNum: "4.",
+        gridFourTitle: "After care and guarantees.",
+        gridFourText:
+          "Our industry leading 2 year workmanship guarantee is designed to offer you peace of mind. On the off chance that something goes wrong, we come out and fix it for free. Simple like that. For item faults, we are more than happy to replace them while under warranty (labour costs may apply)",
+      },
+      reviewsSection: {
+        darkBgTextTitle:
+          "You are our top priority. Your satisfaction is our goal.",
+        darkBgTextSubtitle:
+          "We've built our business on the back of our clients satisfaction. If you are happy, we are happy. To read even more reviews, scroll to the bottom where you'll find links to different platforms with verified reviews.",
+        darkBgTextBtn: "Let's discuss",
+      },
+      faqs: [
+        {
+          question: "Who is Better Homes Studio?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              We are a full service renovation company based in London. We do
+              everything from interior design to building extensions and
+              converting lofts. We bet there is nothing you can throw at us that
+              we can&apos;t do.
+            </div>
+          ),
+        },
+        {
+          question: "Are your quotes free?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Yes, our quotes are 100% free, detailed and transparent.
+            </div>
+          ),
+        },
+        {
+          question: "Do you offer a work guarantee?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Yes. The BH Studio workmanship guarantee covers our work from 1
+              year to 10 years depending on the project. You can read more about{" "}
+              <Link href="/our-guarantee">our guarantee here.</Link>
+            </div>
+          ),
+        },
+        {
+          question: "Can I use BHS just for the build phase?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Yes, if you provide us with the design, our team will take care of
+              translating your ideas into reality
+            </div>
+          ),
+        },
+        {
+          question: "How long will my project take?",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              It depends on the size of your project. A bathroom renovation
+              usually takes between 10 and 14 working days. A full flat or home
+              renovation can take from 3 weeks to 1 and a half months and up
+              depending on complexity. For a more specific answer, reach out to
+              us.
+            </div>
+          ),
+        },
+        {
+          question: "Do you offer refferal rewards?",
+          answer:
+            "Yes, we run the BHS Scheme. This allows you to win a reward for every client you refer that we end up working with. For more information, please reach out.",
+        },
+        {
+          question: "I have another question",
+          answer: (
+            <div className="space-y-2 leading-relaxed">
+              Great, give us a call or fill our form.
+            </div>
+          ),
+        },
+      ],
+      blogHighlights: [
+        {
+          title: "We won the Best of Houzz Service Award - 2023",
+          date: "23 February 2023",
+          imgUrl: "/assets/img/misc/best-of-houzz-winner.png",
+          slug: "best-of-houzz-winner-2023",
+        },
+        {
+          title: "Top 5 bathroom design trends in 2023",
+          date: "23 January 2023",
+          imgUrl: "/assets/img/bathroom/bathroom-design-trend-terrazzo.jpeg",
+          slug: "top-5-bathroom-design-trends-in-2023",
+        },
+        {
+          title: "Save money and time with a smart home",
+          date: "05 March 2023",
+          imgUrl: "/assets/img/smarthome/smarthome-1.webp",
+          slug: "smart-home-ideas-2023",
+        },
+        {
+          title: "Small bathroom design & renovation ideas",
+          date: "15 February 2023",
+          imgUrl:
+            "/assets/img/bathroom/vertical-layout-in-small-bathroom-design.jpeg",
+          slug: "small-bathroom-design-ideas",
+        },
+      ],
+    },
+    extensionPage: {
+      ctaTallyFormLink:
+        "#tally-open=3x6L5n&tally-emoji-text=👋&tally-emoji-animation=wave",
+      title: "Bathroom renovation chaos? ",
+      titleAccent: "Experience hassle free",
+      subtitle:
+        "Bathroom design, supply and renovation. From 0 to 100 and you don't have to lift a finger. Be smarter than your peers and choose the easy way - The Better Homes Studio way.",
+      heroCTA: "take the first step - it's free",
+      heroImgUrl: "bathroom/industrial-bathroom.webp",
+      servicesSectionTitle: "What we do",
+      servicesSectionSubtitle: "Full service renovation company",
+      whatWeDoSection: {
+        bathroomDesign: {
+          title: "Bathroom design",
+          subtitle: "We create outstanding bathrooms.",
+          subtitleAccent: " Design, Supply & Install.",
+          p1: "Renovating your bathroom can be quite the task. There are a lot of big decisions to be made from design and practicality to plumbing and drainage.",
+          p2: "Our team will help you make the best decisions whether you are doing a full Design, Supply & Install or just the installation with us.",
+          CTA: "Get your bathroom designed",
+          imgSrc: "/assets/img/bathroom/bathroom-design.webp",
           slug: "pages/bathroom-renovation",
         },
         smallBathroom: {
