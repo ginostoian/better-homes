@@ -879,11 +879,11 @@ const config = {
     },
     extensionPage: {
       ctaTallyFormLink:
-        "#tally-open=3x6L5n&tally-emoji-text=👋&tally-emoji-animation=wave",
+        "#tally-open=wQEoXw&tally-emoji-text=👋&tally-emoji-animation=wave",
       title: "Extending your home the right way. ",
       titleAccent: "It's hard but we make it easier.",
       subtitle:
-        "Bathroom design, supply and renovation. From 0 to 100 and you don't have to lift a finger. Be smarter than your peers and choose the easy way - The Better Homes Studio way.",
+        "Looking to create an inviting space bathed in natural light? Need extra space for a growing family? Want to experience the ease and functionality of open-plan living? Our team will work with you to bring your dream extension to life.",
       heroCTA: "take the first step - it's free",
       heroImgUrl: "extension/single-storey-extension.webp",
       servicesSectionTitle: "What we do",
@@ -958,19 +958,19 @@ const config = {
         gridOneNum: "1.",
         gridOneTitle: "Expertise through experience.",
         gridOneText:
-          "We have been designing and renovating bathrooms in London for over 12 years. We have encountered all possible scenarios and all types of clients. This means we know how to manage anything that comes our way.",
+          "We have been extending houses in London for over 12 years. We have encountered all possible scenarios and all types of clients. This means we know how to manage anything that comes our way.",
         gridTwoNum: "2.",
         gridTwoTitle: "Detailed, transparent, no fluff quotes.",
         gridTwoText:
-          "Worried about 'the actual' price of your bathroom renovation? All our estimates and quotes are free, transparent and detailed. What you see is what you get. No more hidden costs that take the cost up by 50% more than initially quoted.",
+          "Worried about 'the actual' price of your extension? All our estimates and quotes are free, transparent and detailed. What you see is what you get. No more hidden costs that take the cost up by 50% more than initially quoted.",
         gridThreeNum: "3.",
         gridThreeTitle: "Your bathroom. Professionaly designed.",
         gridThreeText:
-          "Skip the tens of hours spent scouring Pinterest and Google for inspiration and for what you need to purchase. Let our proffesional bathroom designers do all the heavy lifting. Relax, approve and visualise your bathroom in 3D from the comfort of your house. Piece of cake.",
+          "Skip the tens of hours spent research and dealing with hard to work with contractors. Let our team of proffesionals do all the heavy lifting for you. Relax, approve and see your dreams come true in front of your eyes. Piece of cake.",
         gridFourNum: "4.",
         gridFourTitle: "After care and guarantees.",
         gridFourText:
-          "Our industry leading 2 year workmanship guarantee is designed to offer you peace of mind. On the off chance that something goes wrong, we come out and fix it for free. Simple like that. For item faults, we are more than happy to replace them while under warranty (labour costs may apply)",
+          "Our industry leading workmanship guarantee is designed to offer you peace of mind. On the off chance that something goes wrong, we come out and fix it for free. Simple like that. For item faults, we are more than happy to replace them while under warranty (labour costs may apply)",
       },
       reviewsSection: {
         darkBgTextTitle:
