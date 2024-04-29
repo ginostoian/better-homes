@@ -13,30 +13,31 @@ import TextGrid from "@/components/textGrid/TextGrid";
 import config from "@/config";
 
 export default function Page() {
-  const homepageCopy = config.copy.homepage;
-  const whatWeDoCopy = config.copy.homepage.whatWeDoSection;
+  const extensionPageCopy = config.copy.extensionPage;
+  const whatWeDoCopy = extensionPageCopy.whatWeDoSection;
   const whatWeDoArr = [
-    whatWeDoCopy.bathroom,
-    whatWeDoCopy.kitchen,
-    whatWeDoCopy.generalRenovation,
-    whatWeDoCopy.interiorDesign,
-    whatWeDoCopy.houseExtension,
-    whatWeDoCopy.smartHome,
+    whatWeDoCopy.singleStoreyExtension,
+    whatWeDoCopy.doubleStoreyExtension,
+    whatWeDoCopy.sideReturnExtension,
+    whatWeDoCopy.overStructureExtension,
+    whatWeDoCopy.loftConversion,
+    whatWeDoCopy.basementExtension,
   ];
-  const howWeDoItCopy = config.copy.homepage.howWeDoItSection;
+  const howWeDoItCopy = extensionPageCopy.howWeDoItSection;
   const reviewsCtaCopy = config.copy.homepage.reviewsSection;
-  const faqCopy = config.copy.homepage.faqs;
-  const blogHighlightCopy = config.copy.homepage.blogHighlights;
+  const faqCopy = extensionPageCopy.faqs;
+  const blogHighlightCopy = extensionPageCopy.blogHighlights;
 
   return (
     <>
       <main>
         <Hero
-          title={homepageCopy.title}
-          titleAccent={homepageCopy.titleAccent}
-          subtitle={homepageCopy.subtitle}
-          heroCTA={homepageCopy.heroCTA}
-          heroImgUrl={homepageCopy.heroImgUrl}
+          title={extensionPageCopy.title}
+          titleAccent={extensionPageCopy.titleAccent}
+          subtitle={extensionPageCopy.subtitle}
+          heroCTA={extensionPageCopy.heroCTA}
+          heroImgUrl={extensionPageCopy.heroImgUrl}
+          ctaTallyFormLink={extensionPageCopy.ctaTallyFormLink}
         />
         <SocialProof />
         <Problem />
@@ -70,6 +71,10 @@ export default function Page() {
         <Testimonials11 />
         <TextBlockDark content={reviewsCtaCopy} />
         <FAQ content={faqCopy} />
+        <SectionTitle
+          title="The Knowledge Center"
+          subtitle="Where you actually learn new things"
+        />
         <BlogHighlight articles={blogHighlightCopy} />
       </main>
     </>
