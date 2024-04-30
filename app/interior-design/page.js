@@ -13,30 +13,31 @@ import TextGrid from "@/components/textGrid/TextGrid";
 import config from "@/config";
 
 export default function Page() {
-  const homepageCopy = config.copy.homepage;
-  const whatWeDoCopy = config.copy.homepage.whatWeDoSection;
+  const interiorDesignCopy = config.copy.interiorDesignPage;
+  const whatWeDoCopy = interiorDesignCopy.whatWeDoSection;
   const whatWeDoArr = [
-    whatWeDoCopy.bathroom,
-    whatWeDoCopy.kitchen,
-    whatWeDoCopy.generalRenovation,
-    whatWeDoCopy.interiorDesign,
-    whatWeDoCopy.houseExtension,
-    whatWeDoCopy.smartHome,
+    whatWeDoCopy.fullHome,
+    whatWeDoCopy.bathroomInstallation,
+    whatWeDoCopy.kitchenInstallation,
+    whatWeDoCopy.structuralWork,
+    whatWeDoCopy.heating,
+    whatWeDoCopy.flooringInstallation,
   ];
-  const howWeDoItCopy = config.copy.homepage.howWeDoItSection;
+  const howWeDoItCopy = interiorDesignCopy.howWeDoItSection;
   const reviewsCtaCopy = config.copy.homepage.reviewsSection;
-  const faqCopy = config.copy.homepage.faqs;
-  const blogHighlightCopy = config.copy.homepage.blogHighlights;
+  const faqCopy = interiorDesignCopy.faqs;
+  const blogHighlightCopy = interiorDesignCopy.blogHighlights;
 
   return (
     <>
       <main>
         <Hero
-          title={homepageCopy.title}
-          titleAccent={homepageCopy.titleAccent}
-          subtitle={homepageCopy.subtitle}
-          heroCTA={homepageCopy.heroCTA}
-          heroImgUrl={homepageCopy.heroImgUrl}
+          title={interiorDesignCopy.title}
+          titleAccent={interiorDesignCopy.titleAccent}
+          subtitle={interiorDesignCopy.subtitle}
+          heroCTA={interiorDesignCopy.heroCTA}
+          heroImgUrl={interiorDesignCopy.heroImgUrl}
+          ctaTallyFormLink={interiorDesignCopy.ctaTallyFormLink}
         />
         <SocialProof />
         <Problem />
@@ -45,7 +46,7 @@ export default function Page() {
           title="What we do"
           subtitle="Full service renovation company"
         />
-        {whatWeDoArr.map((item, i) => {
+        {/* {whatWeDoArr.map((item, i) => {
           return (
             <ContentRow
               key={i}
@@ -60,7 +61,7 @@ export default function Page() {
               slug={item.slug}
             />
           );
-        })}
+        })} */}
         <WithWithout />
         <SectionTitle
           title="How we do it"
@@ -70,6 +71,10 @@ export default function Page() {
         <Testimonials11 />
         <TextBlockDark content={reviewsCtaCopy} />
         <FAQ content={faqCopy} />
+        <SectionTitle
+          title="The Knowledge Center"
+          subtitle="Where you actually learn new things"
+        />
         <BlogHighlight articles={blogHighlightCopy} />
       </main>
     </>
