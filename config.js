@@ -1269,7 +1269,7 @@ const config = {
     },
     aboutPage: {
       ctaTallyFormLink:
-        "#tally-open=w2XXag&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave",
+        "#tally-open=wQEoXw&tally-emoji-text=👋&tally-emoji-animation=wave",
       title: "Better Homes Studio! ",
       titleAccent: "Full service renovation company",
       subtitle:
