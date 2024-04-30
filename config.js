@@ -1270,12 +1270,12 @@ const config = {
     aboutPage: {
       ctaTallyFormLink:
         "#tally-open=w2XXag&tally-overlay=1&tally-emoji-text=👋&tally-emoji-animation=wave",
-      title: "Goodbye renovation nightmares. ",
-      titleAccent: "Hello, dream home!",
+      title: "Better Homes Studio! ",
+      titleAccent: "Full service renovation company",
       subtitle:
-        "Tired of unreliable contractors and surprise costs? Say goodbye to renovation nightmares and endless contractor headaches. Our streamlined process, transparent communication, and skilled team will take you from 0 to 100 in no time.",
-      heroCTA: "take the first step - it's free",
-      heroImgUrl: "general/living-room-1.webp",
+        "We are London based full service renovation company with over 12 years of experience in the field. From bathroom renovations to home extensions, our team has you covered design to build. We are also the proud winners of the Best of Houzz Award two years in a row.",
+      heroCTA: "Reach out now",
+      heroImgUrl: "social/bh-logo.png",
       servicesSectionTitle: "What we do",
       servicesSectionSubtitle: "Full service renovation company",
       whatWeDoSection: {

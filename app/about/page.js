@@ -13,8 +13,8 @@ import TextGrid from "@/components/textGrid/TextGrid";
 import config from "@/config";
 
 export default function Page() {
-  const renovationPageCopy = config.copy.renovationPage;
-  const whatWeDoCopy = renovationPageCopy.whatWeDoSection;
+  const aboutPageCopy = config.copy.aboutPage;
+  const whatWeDoCopy = aboutPageCopy.whatWeDoSection;
   const whatWeDoArr = [
     whatWeDoCopy.fullHome,
     whatWeDoCopy.bathroomInstallation,
@@ -23,45 +23,25 @@ export default function Page() {
     whatWeDoCopy.heating,
     whatWeDoCopy.flooringInstallation,
   ];
-  const howWeDoItCopy = renovationPageCopy.howWeDoItSection;
+  const howWeDoItCopy = aboutPageCopy.howWeDoItSection;
   const reviewsCtaCopy = config.copy.homepage.reviewsSection;
-  const faqCopy = renovationPageCopy.faqs;
-  const blogHighlightCopy = renovationPageCopy.blogHighlights;
+  const faqCopy = aboutPageCopy.faqs;
+  const blogHighlightCopy = aboutPageCopy.blogHighlights;
 
   return (
     <>
       <main>
         <Hero
-          title={renovationPageCopy.title}
-          titleAccent={renovationPageCopy.titleAccent}
-          subtitle={renovationPageCopy.subtitle}
-          heroCTA={renovationPageCopy.heroCTA}
-          heroImgUrl={renovationPageCopy.heroImgUrl}
-          ctaTallyFormLink={renovationPageCopy.ctaTallyFormLink}
+          title={aboutPageCopy.title}
+          titleAccent={aboutPageCopy.titleAccent}
+          subtitle={aboutPageCopy.subtitle}
+          heroCTA={aboutPageCopy.heroCTA}
+          heroImgUrl={aboutPageCopy.heroImgUrl}
+          ctaTallyFormLink={aboutPageCopy.ctaTallyFormLink}
         />
         <SocialProof />
         <Problem />
         <FeaturesListicle />
-        <SectionTitle
-          title="What we do"
-          subtitle="Full service renovation company"
-        />
-        {whatWeDoArr.map((item, i) => {
-          return (
-            <ContentRow
-              key={i}
-              title={item.title}
-              subtitle={item.subtitle}
-              subtitleAccent={item.subtitleAccent}
-              p1={item.p1}
-              p2={item.p2}
-              cta={item.CTA}
-              imgSrc={item.imgSrc}
-              order={i % 2 === 0 ? false : true}
-              slug={item.slug}
-            />
-          );
-        })}
         <WithWithout />
         <SectionTitle
           title="How we do it"
