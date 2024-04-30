@@ -4,7 +4,6 @@ import Problem from "@/components/Problem";
 import Testimonials11 from "@/components/Testimonials11";
 import WithWithout from "@/components/WithWithout";
 import BlogHighlight from "@/components/blog/BlogHighlight";
-import ContentRow from "@/components/contentRow/ContentRow";
 import Hero from "@/components/hero/Hero";
 import SectionTitle from "@/components/sectionTitle/SectionTitle";
 import SocialProof from "@/components/socialProof/SocialProof";
@@ -14,15 +13,15 @@ import config from "@/config";
 
 export default function Page() {
   const aboutPageCopy = config.copy.aboutPage;
-  const whatWeDoCopy = aboutPageCopy.whatWeDoSection;
-  const whatWeDoArr = [
-    whatWeDoCopy.fullHome,
-    whatWeDoCopy.bathroomInstallation,
-    whatWeDoCopy.kitchenInstallation,
-    whatWeDoCopy.structuralWork,
-    whatWeDoCopy.heating,
-    whatWeDoCopy.flooringInstallation,
-  ];
+  //   const whatWeDoCopy = aboutPageCopy.whatWeDoSection;
+  //   const whatWeDoArr = [
+  //     whatWeDoCopy.fullHome,
+  //     whatWeDoCopy.bathroomInstallation,
+  //     whatWeDoCopy.kitchenInstallation,
+  //     whatWeDoCopy.structuralWork,
+  //     whatWeDoCopy.heating,
+  //     whatWeDoCopy.flooringInstallation,
+  //   ];
   const howWeDoItCopy = aboutPageCopy.howWeDoItSection;
   const reviewsCtaCopy = config.copy.homepage.reviewsSection;
   const faqCopy = aboutPageCopy.faqs;
