@@ -49,17 +49,17 @@ const refTypes = {
 const list = [
   {
     // Optional, use for social media like Twitter. Does not link anywhere but cool to display
-    username: "marclou",
+    username: "louise",
     // REQUIRED
-    name: "Marc Lou",
+    name: "Louise Thorogood",
     // REQUIRED
-    text: "Really easy to use. The tutorials are really useful and explains how everything works. Hope to ship my next project really fast!",
+    text: "I could not recommend them more highly. The whole process was so streamlined and efficient. They submitted a very detailed quote which was competitively priced, and went onto do the work very quickly to a high standard. ",
     // REQUIRED — use refTypes.other if you don't want to display an icon
-    type: refTypes.twitter,
+    type: refTypes.productHunt,
     // Optional, link to the person's testimonial. It's more trustable
-    link: "https://twitter.com/marc_louvion",
+    link: "https://www.houzz.co.uk/viewReview/1802745/better-homes-studio-review",
     // Optional, a statically imported image (usually from your public folder—recommended) or a link to the person's avatar. Shows a fallback letter if not provided
-    img: "https://pbs.twimg.com/profile_images/1514863683574599681/9k7PqDTA_400x400.jpg",
+    img: "",
     // You can display video testimonials to build more trust. Just swap the type above to "video" and add at least the video source below
     // videoSrc: "/jack.mp4"
   },
@@ -103,9 +103,9 @@ The better homes studio managed to bring my vision to life, I still can’t beli
   },
   {
     name: "Marc Lou",
-    text: "The tool is exactly what I didn't even know I needed.",
+    text: "This team is exactly what I didn't even know I needed.",
     videoPoster: "https://d1wkquwg5s1b04.cloudfront.net/demo/marcPoster.jpg",
-    videoSrc: "https://d1wkquwg5s1b04.cloudfront.net/demo/marcVideo.mp4",
+    videoSrc: "https://d1wkquwg5s1b04.cloudfront.net/demo/marcVideo.mp",
     videoHeight: 250,
     videoWidth: 500,
     videoType: "video/mp4",
