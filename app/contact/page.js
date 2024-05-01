@@ -1,3 +1,4 @@
+import ContactForm from "@/components/ContactForm";
 import FAQ from "@/components/FAQ";
 import FeaturesListicle from "@/components/FeaturesListicle";
 import Problem from "@/components/Problem";
@@ -39,17 +40,7 @@ export default function Page() {
           ctaTallyFormLink={aboutPageCopy.ctaTallyFormLink}
         />
         <SocialProof />
-        <iframe
-          data-tally-src="https://tally.so/embed/wQEoXw?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
-          width="100%"
-          height="300"
-          frameBorder="0"
-          marginHeight="0"
-          marginWidth="0"
-          title="Contact us"
-          className="contact-iframe"
-          id="contactForm"
-        ></iframe>
+        <ContactForm />
         <Problem />
         <FeaturesListicle />
         <WithWithout />
