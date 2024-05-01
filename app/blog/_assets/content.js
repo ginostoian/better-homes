@@ -8,33 +8,51 @@ import introducingSupabaseImg from "@/public/blog/introducing-supabase/header.pn
 
 // These slugs are used to generate pages in the /blog/category/[categoryI].js. It's a way to group articles by category.
 const categorySlugs = {
-  feature: "feature",
-  tutorial: "tutorial",
+  bathroom: "bathroom",
+  kitchen: "kitchen",
+  fullHome: "full-home",
 };
 
 // All the blog categories data display in the /blog/category/[categoryI].js pages.
 export const categories = [
   {
     // The slug to use in the URL, from the categorySlugs object above.
-    slug: categorySlugs.feature,
+    slug: categorySlugs.bathroom,
     // The title to display the category title (h1), the category badge, the category filter, and more. Less than 60 characters.
-    title: "New Features",
+    title: "Bathroom renovation",
     // A short version of the title above, display in small components like badges. 1 or 2 words
-    titleShort: "Features",
+    titleShort: "Bathrooms",
     // The description of the category to display in the category page. Up to 160 characters.
     description:
-      "Here are the latest features we've added to ShipFast. I'm constantly improving our product to help you ship faster.",
+      "Everything about bathroom renovation - from design to budgets and planning.",
     // A short version of the description above, only displayed in the <Header /> on mobile. Up to 60 characters.
-    descriptionShort: "Latest features added to ShipFast.",
+    descriptionShort: "Everything about bathroom renovation",
   },
   {
-    slug: categorySlugs.tutorial,
-    title: "How Tos & Tutorials",
-    titleShort: "Tutorials",
+    // The slug to use in the URL, from the categorySlugs object above.
+    slug: categorySlugs.kitchen,
+    // The title to display the category title (h1), the category badge, the category filter, and more. Less than 60 characters.
+    title: "Kitchen renovation",
+    // A short version of the title above, display in small components like badges. 1 or 2 words
+    titleShort: "Kitchens",
+    // The description of the category to display in the category page. Up to 160 characters.
     description:
-      "Learn how to use ShipFast with these step-by-step tutorials. I'll show you how to ship faster and save time.",
-    descriptionShort:
-      "Learn how to use ShipFast with these step-by-step tutorials.",
+      "Everything about kitchen renovations - from design to budgets and planning.",
+    // A short version of the description above, only displayed in the <Header /> on mobile. Up to 60 characters.
+    descriptionShort: "Everything about Kitchen renovation",
+  },
+  {
+    // The slug to use in the URL, from the categorySlugs object above.
+    slug: categorySlugs.fullHome,
+    // The title to display the category title (h1), the category badge, the category filter, and more. Less than 60 characters.
+    title: "Home renovation",
+    // A short version of the title above, display in small components like badges. 1 or 2 words
+    titleShort: "Home Renovation",
+    // The description of the category to display in the category page. Up to 160 characters.
+    description:
+      "Everything about home renovation - from design to budgets and planning.",
+    // A short version of the description above, only displayed in the <Header /> on mobile. Up to 60 characters.
+    descriptionShort: "Everything about bathroom renovation",
   },
 ];
 
@@ -56,7 +74,10 @@ const socialIcons = {
         className="w-9 h-9"
         // Using a dark theme? ->  className="w-9 h-9 fill-white"
       >
-        <g id="layer1" transform="translate(52.390088,-25.058597)">
+        <g
+          id="layer1"
+          transform="translate(52.390088,-25.058597)"
+        >
           <path
             id="path1009"
             d="M283.94,167.31l386.39,516.64L281.5,1104h87.51l340.42-367.76L984.48,1104h297.8L874.15,558.3l361.92-390.99   h-87.51l-313.51,338.7l-253.31-338.7H283.94z M412.63,231.77h136.81l604.13,807.76h-136.81L412.63,231.77z"
@@ -95,21 +116,21 @@ const socialIcons = {
 
 // These slugs are used to generate pages in the /blog/author/[authorId].js. It's a way to show all articles from an author.
 const authorSlugs = {
-  marc: "marc",
+  gino: "gino",
 };
 
 // All the blog authors data display in the /blog/author/[authorId].js pages.
 export const authors = [
   {
     // The slug to use in the URL, from the authorSlugs object above.
-    slug: authorSlugs.marc,
+    slug: authorSlugs.gino,
     // The name to display in the author's bio. Up to 60 characters.
-    name: "Marc Lou",
+    name: "Gino S",
     // The job to display in the author's bio. Up to 60 characters.
-    job: "Maker of ByeDispute",
+    job: "Founder",
     // The description of the author to display in the author's bio. Up to 160 characters.
     description:
-      "Marc is a developer and an entrepreneur. He's built 20 startups in the last 3 years. 6 were profitable and 3 were acquired. He's currently building ByeDispute, the #1 Stripe Chargebacks Protection tool.",
+      "Gino is a developer and an entrepreneur. He is the co founder of Better Homes Studio and is commited to change the way people renovate by creating the thing that the industry lacks most - trust.",
     // The avatar of the author to display in the author's bio and avatar badge. It's better to use a local image, but you can also use an external image (https://...)
     avatar: marcImg,
     // A list of social links to display in the author's bio.
@@ -117,12 +138,12 @@ export const authors = [
       {
         name: socialIcons.twitter.name,
         icon: socialIcons.twitter.svg,
-        url: "https://twitter.com/marc_louvion",
+        url: "https://twitter.com/iamgino_s",
       },
       {
         name: socialIcons.linkedin.name,
         icon: socialIcons.linkedin.svg,
-        url: "https://www.linkedin.com/in/marclouvion/",
+        url: "https://www.linkedin.com/in/ginostoian/",
       },
       {
         name: socialIcons.github.name,
@@ -162,10 +183,10 @@ export const articles = [
       "Supabase is an open-source Firebase alternative. It's a great tool for building a backend for your app. It's now integrated with ShipFast!",
     // An array of categories of the article. It's used to generate the category badges, the category filter, and more.
     categories: [
-      categories.find((category) => category.slug === categorySlugs.feature),
+      categories.find((category) => category.slug === categorySlugs.kitchen),
     ],
     // The author of the article. It's used to generate a link to the author's bio page.
-    author: authors.find((author) => author.slug === authorSlugs.marc),
+    author: authors.find((author) => author.slug === authorSlugs.gino),
     // The date of the article. It's used to generate the meta date.
     publishedAt: "2023-11-20",
     image: {
@@ -200,7 +221,10 @@ export const articles = [
           <h3 className={styles.h3}>1. Create a supabase account</h3>
           <p className={styles.p}>
             First, go to{" "}
-            <a href="https://supabase.com/" className="link link-primary">
+            <a
+              href="https://supabase.com/"
+              className="link link-primary"
+            >
               Supabase
             </a>{" "}
             and create an account. It&apos;s free for up to 10,000 rows per
