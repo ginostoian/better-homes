@@ -1,14 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/app/icon.png";
 import config from "@/config";
 import { categories } from "../content";
-import ButtonSignin from "@/components/ButtonSignin";
+import ButtonGradient from "@/components/ButtonGradient";
 
 const links = [
   {
@@ -16,10 +15,6 @@ const links = [
     label: "All Posts",
   },
 ];
-
-const cta = (
-  <ButtonSignin text="Prevent disputes" extraStyle="btn-primary md:btn-sm" />
-);
 
 const ButtonPopoverCategories = () => {
   return (
@@ -59,7 +54,10 @@ const ButtonPopoverCategories = () => {
                 <div className="overflow-hidden rounded-box shadow-lg ring-1 ring-base-content ring-opacity-5">
                   <div className="relative grid gap-2 bg-base-100 p-2 overflow-hidden">
                     {categories.map((category) => (
-                      <div key={category.slug} onClick={() => close()}>
+                      <div
+                        key={category.slug}
+                        onClick={() => close()}
+                      >
                         <Link
                           className="block text-left p-3 -m-1 cursor-pointer hover:bg-base-200 rounded-box duration-200"
                           href={`/blog/category/${category.slug}`}
@@ -142,6 +140,16 @@ const ButtonAccordionCategories = () => {
 const HeaderBlog = () => {
   const searchParams = useSearchParams();
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+
+  const cta = (
+    <ButtonGradient
+      title="Expert help"
+      onClick={() => {
+        router.push("/contact");
+      }}
+    />
+  );
 
   // setIsOpen(false) when the route changes (i.e: when the user clicks on a link on mobile)
   useEffect(() => {
@@ -149,26 +157,16 @@ const HeaderBlog = () => {
   }, [searchParams]);
 
   return (
-    <header className="bg-base-200">
+    <header className="bg-base-200 container mt-6">
       <nav className="max-w-7xl flex items-center justify-between px-8 py-3 mx-auto">
-        {/* Your logo/name on large screens */}
-        <div className="flex lg:flex-1">
-          <Link
-            className="flex items-center gap-2 shrink-0 "
-            href="/"
-            title={`${config.appName} hompage`}
-          >
-            <Image
-              src={logo}
-              alt={`${config.appName} logo`}
-              className="w-8"
-              priority={true}
-              width={32}
-              height={32}
-            />
-            <span className="font-extrabold text-lg">{config.appName}</span>
-          </Link>
-        </div>
+        <Image
+          src="/assets/logo/bh-logo.svg"
+          alt={`${config.appName} logo`}
+          className="w-12"
+          priority={true}
+          width={40}
+          height={40}
+        />
         {/* Burger button to open menu on mobile */}
         <div className="flex lg:hidden">
           <button
@@ -227,13 +225,12 @@ const HeaderBlog = () => {
               href="/"
             >
               <Image
-                src={logo}
+                src="/assets/logo/bh-logo.svg"
                 alt={`${config.appName} logo`}
                 className="w-8"
-                placeholder="blur"
                 priority={true}
-                width={32}
-                height={32}
+                width={40}
+                height={40}
               />
               <span className="font-extrabold text-lg">{config.appName}</span>
             </Link>

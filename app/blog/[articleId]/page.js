@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
             height: 660,
           },
         ],
-        locale: "en_US",
+        locale: "en_GB",
         type: "website",
       },
     },
@@ -74,7 +74,7 @@ export default async function Article({ params }) {
       />
 
       {/* GO BACK LINK */}
-      <div>
+      <div className="container">
         <Link
           href="/blog"
           className="link !no-underline text-base-content/80 hover:text-base-content inline-flex items-center gap-1"
@@ -96,7 +96,7 @@ export default async function Article({ params }) {
         </Link>
       </div>
 
-      <article>
+      <article className="container">
         {/* HEADER WITH CATEGORIES AND DATE AND TITLE */}
         <section className="my-12 md:my-20 max-w-[800px]">
           <div className="flex items-center gap-4 mb-6">
@@ -107,7 +107,10 @@ export default async function Article({ params }) {
                 extraStyle="!badge-lg"
               />
             ))}
-            <span className="text-base-content/80" itemProp="datePublished">
+            <span
+              className="text-base-content/80"
+              itemProp="datePublished"
+            >
               {new Date(article.publishedAt).toLocaleDateString("en-US", {
                 month: "long",
                 day: "numeric",
@@ -140,7 +143,10 @@ export default async function Article({ params }) {
                 </p>
                 <div className="space-y-2 md:space-y-5">
                   {articlesRelated.map((article) => (
-                    <div className="" key={article.slug}>
+                    <div
+                      className=""
+                      key={article.slug}
+                    >
                       <p className="mb-0.5">
                         <Link
                           href={`/blog/${article.slug}`}

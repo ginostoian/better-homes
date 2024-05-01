@@ -29,7 +29,7 @@ export default async function Category({ params }) {
 
   return (
     <>
-      <section className="mt-12 mb-24 md:mb-32 max-w-3xl mx-auto text-center">
+      <section className="container mt-12 mb-24 md:mb-32 max-w-3xl mx-auto text-center">
         <h1 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-6 md:mb-12">
           {category.title}
         </h1>
@@ -38,7 +38,7 @@ export default async function Category({ params }) {
         </p>
       </section>
 
-      <section className="mb-24">
+      <section className="container mb-24">
         <h2 className="font-bold text-2xl lg:text-4xl tracking-tight text-center mb-8 md:mb-12">
           Most recent articles in {category.title}
         </h2>
@@ -55,7 +55,7 @@ export default async function Category({ params }) {
         </div>
       </section>
 
-      <section>
+      <section className="container">
         <h2 className="font-bold text-2xl lg:text-4xl tracking-tight text-center mb-8 md:mb-12">
           Other categories you might like
         </h2>
@@ -64,7 +64,11 @@ export default async function Category({ params }) {
           {categories
             .filter((c) => c.slug !== category.slug)
             .map((category) => (
-              <CardCategory key={category.slug} category={category} tag="h3" />
+              <CardCategory
+                key={category.slug}
+                category={category}
+                tag="h3"
+              />
             ))}
         </div>
       </section>

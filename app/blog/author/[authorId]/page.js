@@ -22,7 +22,7 @@ export default async function Author({ params }) {
 
   return (
     <>
-      <section className="max-w-3xl mx-auto flex flex-col md:flex-row gap-8 mt-12 mb-24 md:mb-32">
+      <section className="container max-w-3xl mx-auto flex flex-col md:flex-row gap-8 mt-12 mb-24 md:mb-32">
         <div>
           <p className="text-xs uppercase tracking-wide text-base-content/80 mb-2">
             Authors
@@ -65,14 +65,17 @@ export default async function Author({ params }) {
         </div>
       </section>
 
-      <section>
+      <section className="container">
         <h2 className="font-bold text-2xl lg:text-4xl tracking-tight text-center mb-8 md:mb-12">
           Most recent articles by {author.name}
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-8">
           {articlesByAuthor.map((article) => (
-            <CardArticle key={article.slug} article={article} />
+            <CardArticle
+              key={article.slug}
+              article={article}
+            />
           ))}
         </div>
       </section>

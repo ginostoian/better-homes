@@ -5,9 +5,9 @@ import config from "@/config";
 import { getSEOTags } from "@/libs/seo";
 
 export const metadata = getSEOTags({
-  title: `${config.appName} Blog | Stripe Chargeback Protection`,
+  title: `${config.appName} Knowledge Center | Full service renovation company in London`,
   description:
-    "Learn how to prevent chargebacks, how to accept payments online, and keep your Stripe account in good standing",
+    "Practical learnings on how to manage the process of renovating your home, bathroom, kitchen or building your extension. Breakdowns of prices and more.",
   canonicalUrlRelative: "/blog",
 });
 
@@ -17,13 +17,13 @@ export default async function Blog() {
     .slice(0, 6);
   return (
     <>
-      <section className="text-center max-w-xl mx-auto mt-12 mb-24 md:mb-32">
-        <h1 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-6">
-          The {config.appName} Blog
+      <section className="text-center max-w-xl mx-auto mt-12 mb-24 md:mb-32 container">
+        <h1 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-6 text-[#100b47]">
+          The Knowledge Center
         </h1>
         <p className="text-lg opacity-80 leading-relaxed">
-          Learn how to ship your startup in days, not weeks. And get the latest
-          updates about the boilerplate
+          Learn how a renovation project works, how much it should cost and how
+          to more efficiently manage it without ruining your sanity.
         </p>
       </section>
 
@@ -38,13 +38,17 @@ export default async function Blog() {
       </section>
 
       <section>
-        <p className="font-bold text-2xl lg:text-4xl tracking-tight text-center mb-8 md:mb-12">
+        <p className="text-[#100b47] font-bold text-2xl lg:text-4xl tracking-tight text-center mb-8 md:mb-12">
           Browse articles by category
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {categories.map((category) => (
-            <CardCategory key={category.slug} category={category} tag="div" />
+            <CardCategory
+              key={category.slug}
+              category={category}
+              tag="div"
+            />
           ))}
         </div>
       </section>
