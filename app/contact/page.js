@@ -13,7 +13,7 @@ import TextGrid from "@/components/textGrid/TextGrid";
 import config from "@/config";
 
 export default function Page() {
-  const aboutPageCopy = config.copy.aboutPage;
+  const contactPageCopy = config.copy.contactPage;
   //   const whatWeDoCopy = aboutPageCopy.whatWeDoSection;
   //   const whatWeDoArr = [
   //     whatWeDoCopy.fullHome,
@@ -23,21 +23,21 @@ export default function Page() {
   //     whatWeDoCopy.heating,
   //     whatWeDoCopy.flooringInstallation,
   //   ];
-  const howWeDoItCopy = aboutPageCopy.howWeDoItSection;
+  const howWeDoItCopy = contactPageCopy.howWeDoItSection;
   const reviewsCtaCopy = config.copy.homepage.reviewsSection;
-  const faqCopy = aboutPageCopy.faqs;
-  const blogHighlightCopy = aboutPageCopy.blogHighlights;
+  const faqCopy = contactPageCopy.faqs;
+  const blogHighlightCopy = contactPageCopy.blogHighlights;
 
   return (
     <>
       <main>
         <Hero
-          title={aboutPageCopy.title}
-          titleAccent={aboutPageCopy.titleAccent}
-          subtitle={aboutPageCopy.subtitle}
-          heroCTA={aboutPageCopy.heroCTA}
-          heroImgUrl={aboutPageCopy.heroImgUrl}
-          ctaTallyFormLink={aboutPageCopy.ctaTallyFormLink}
+          title={contactPageCopy.title}
+          titleAccent={contactPageCopy.titleAccent}
+          subtitle={contactPageCopy.subtitle}
+          heroCTA={contactPageCopy.heroCTA}
+          heroImgUrl={contactPageCopy.heroImgUrl}
+          ctaTallyFormLink={contactPageCopy.ctaTallyFormLink}
         />
         <SocialProof />
         <ContactForm />
