@@ -1,4 +1,3 @@
-import ContactForm from "@/components/ContactForm";
 import FAQ from "@/components/FAQ";
 import FeaturesListicle from "@/components/FeaturesListicle";
 import Problem from "@/components/Problem";
